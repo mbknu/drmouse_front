@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../img/caremindwhite.svg';
+import '../App.css';
 
 const Header = () => {
     return (
