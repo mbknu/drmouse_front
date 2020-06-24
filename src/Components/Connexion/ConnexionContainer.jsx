@@ -5,6 +5,7 @@ import '../../styles/connexion.css';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import note from '../../img/notewhite.svg';
 
 const ConnexionContainer = ({login, isAuthenticated, history}) => {
     const useStyles = makeStyles((theme) => ({
@@ -52,6 +53,8 @@ const ConnexionContainer = ({login, isAuthenticated, history}) => {
     };
 
     return (
+      <>
+        <img className='imgnote1' src={note} alt='note-icon' />
         <div className='connexion'>
             <h4>Connexion patient</h4>
             <form className={classes.root} noValidate autoComplete="off">
@@ -77,6 +80,8 @@ const ConnexionContainer = ({login, isAuthenticated, history}) => {
                 Se connecter
             </Button>
         </div>
+        <img className='imgnote2' src={note} alt='note-icon' />
+      </>
     )
 };
 

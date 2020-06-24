@@ -4,10 +4,26 @@
     align-items: center;
     background-color: #fff;
     border-radius: 15px;
-    width: 50%;
+    width: 40%;
     margin: auto;
     padding: 1rem;
     margin-top: 50vh;
     transform: translateY(-50%);
-    color: #3771E2
+    color: #3771E2;
+    position: relative;
+}
+.imgnote1 {
+    position: absolute;
+    width:20vh;
+    top:25%;
+    left:25%;
+    z-index:1
+}
+
+.imgnote2 {
+    position: absolute;
+    width:20vh;
+    bottom:25%;
+    right:25%;
+    z-index:1
 }
