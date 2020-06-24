@@ -1,14 +1,15 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom'
-import HomePage from './Components/HomePage'
-import UserDashboard from './Components/UserDashboard'
-import UserRegisterForm from './Components/UserRegisterForm'
+import {Route, Switch} from 'react-router-dom';
+import HomePage from './Components/HomePage';
+import UserDashboard from './Components/UserDashboard';
+import UserRegisterForm from './Components/UserRegisterForm';
 import ConnexionContainer from './Components/Connexion/ConnexionContainer';
-import Header from './components/Header';
+import Header from './Components/Header';
 
 function App() {
   return (
     <>
+      <Header/>
       <Switch>
         <Route path='/' component={HomePage} exact />
       </Switch>
@@ -23,6 +24,6 @@ function App() {
       </Switch>
     </>
   );
-}
+};
 
 export default App;
