@@ -4,6 +4,7 @@ import HomePage from './Components/HomePage'
 import UserDashboard from './Components/UserDashboard'
 import UserRegisterForm from './Components/UserRegisterForm'
 import ConnexionContainer from './Components/Connexion/ConnexionContainer';
+import Header from './components/Header';
 
 function App() {
   return (
