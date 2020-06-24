@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
+import HomeText from "./HomeText";
 
-class HomePage extends React.Component {
-    render() {
-        return (
-            <div>
-                coucou
-            </div>
-        )
-    }
-}
+const HomePage = () => {
+    return (
+        <>
+            <HomeText />
+        </>
+    );
+};
 
-export default HomePage
+export default HomePage;

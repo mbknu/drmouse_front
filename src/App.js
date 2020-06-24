@@ -1,26 +1,26 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom'
-import HomePage from './Components/HomePage'
-import UserDashboard from './Components/UserDashboard'
-import UserRegisterForm from './Components/UserRegisterForm'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import HomePage from './components/HomePage'
+import UserDashboard from './components/UserDashboard'
+import Login from './components/Login'
+import UserRegisterForm from './components/UserRegisterForm'
+import Header from './components/Header';
 import ConnexionContainer from './Components/Connexion/ConnexionContainer';
 
 function App() {
   return (
-    <>
+    <div className='app'>
+    <Header />
+    <BrowserRouter>
       <Switch>
-        <Route path='/' component={HomePage} exact />
-      </Switch>
-      <Switch>
+        <Route path='/' component={HomePage} />
+        <Route path='/login' component={Login} /
         <Route path='/login' component={ConnexionContainer} />
-      </Switch>
-      <Switch>
         <Route path='/UserForm' component={UserRegisterForm} />
-      </Switch>
-      <Switch>
         <Route path='/dashboard' component={UserDashboard} />
       </Switch>
-    </>
+    </BrowserRouter>
+    </div>
   );
 }
 
