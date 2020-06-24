@@ -1,13 +1,13 @@
 import React from 'react'
 
-class UserDashboard extends React.Component {
+class HomePage extends React.Component {
     render() {
         return (
             <div>
-                user dashboard
+                coucou
             </div>
         )
     }
 }
 
-export default UserDashboard
+export default HomePage
