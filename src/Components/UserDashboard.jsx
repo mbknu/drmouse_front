@@ -1,13 +1,36 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Table from 'react-bootstrap/Table';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import ButtonAction from './Button/ButtonAction';
-import femaleBody from '../female-body.png';
+import femaleBody from './Images/female-body.png';
 import PopoverBoob from './Popovers/PopoverBoob';
 import PopoverUterus from './Popovers/PopoverUterus';
+import PopoverTeeth from './Popovers/PopoverTeeth';
+import PopoverEyes from './Popovers/PopoverEyes';
+import PopoverColon from './Popovers/PopoverColon';
+import PopoverHeart from './Popovers/PopoverHeart';
+import UserExam from './UserExam';
+
 
 const UserDashboard = () => {
+
+  const [userExam, SetUserExam] = useState([]);
+
+  const getUserExam = () => {
+    const url = 'http://localhost:3000/api/exams';
+
+    axios.get(url)
+      .then((res) => res.data)
+      .then((data) => SetUserExam(data))
+      .catch((error) => console.log(error));
+  }
+
+  useEffect(() => {
+    getUserExam();
+  }, []);
+
   return (
     <>
     <header>
@@ -37,12 +60,28 @@ const UserDashboard = () => {
     <section className="ContainerBody">
       <div className="Container-Anatomy">
         <img src={femaleBody} alt="female-body" className="female-image" />
-        <OverlayTrigger trigger="hover" placement="right" overlay={PopoverBoob}>
-        <div className="boobs" />
-        </OverlayTrigger>
-        <OverlayTrigger trigger="hover" placement="bottom" overlay={PopoverUterus}>
-        <div className="uterus" />
-        </OverlayTrigger>
+          <OverlayTrigger trigger="hover" placement="bottom" overlay={PopoverBoob}>
+          {/* <div className="boobs" /> */}
+          <div className="boobs2" />
+          </OverlayTrigger>
+          <OverlayTrigger trigger="hover" placement="bottom" overlay={PopoverUterus}>
+            {/* <div className="uterus" /> */}
+            <div className="uterus2" />
+          </OverlayTrigger>
+          <OverlayTrigger trigger="hover" placement="bottom" overlay={PopoverTeeth}>
+            {/* <div className="teeth" /> */}
+            <div className="teeth2" />
+          </OverlayTrigger>
+          <OverlayTrigger trigger="hover" placement="left" overlay={PopoverEyes}>
+            {/* <div className="eyes" /> */}
+            <div className="eyes2" />
+          </OverlayTrigger>
+          <OverlayTrigger trigger="hover" placement="right" overlay={PopoverColon}>
+            <div className="colon" />
+          </OverlayTrigger>
+          <OverlayTrigger trigger="hover" placement="right" overlay={PopoverHeart}>
+            <div className="heart" />
+          </OverlayTrigger>
       </div>
       <div className="Container-Table">
         <div className="Panel">
@@ -61,29 +100,25 @@ const UserDashboard = () => {
           <thead>
             <tr>
               <th>#</th>
-              <th colSpan="2">Exam</th>
+              <th>Exam</th>
               <th>Description</th>
               <th>Age</th>
-              <th colSpan="2" className="ActionIconHead">
+              <th>Status</th>
+              <th className="ActionIconHead">
                 Appointment
               </th>
             </tr>
           </thead>
           <tbody>
-            {/* {UserList.map((element) => (
-              <UsersList
+            {userExam.map((element) => (
+              <UserExam
                 key={element.id}
                 index={element.id}
-                firstname={element.firstname}
-                lastname={element.lastname}
-                email={element.email}
-                birthday={element.birthday}
-                companies={element.companies_id}
-                job={element.job}
-                photo={element.photo}
-                removeUser={removeUser}
+                age={element.age}
+                title={element.title}
+                description={element.description}
               />
-            ))} */}
+            ))}
           </tbody>
         </Table>
       </div>
