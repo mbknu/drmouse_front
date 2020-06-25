@@ -1,0 +1,89 @@
+.closeModal {
+margin-left: 95%;
+margin-top: -6%;
+}
+
+.closeModal:hover {
+    margin-left: 95%;
+    margin-top: -6%;
+    color: red;
+    cursor: pointer;
+    }
+
+.modalTitle {
+    text-align: center;
+    margin-top:-8%;
+}
+
+label {
+    color: grey;
+    font-size:12px;
+}
+
+.radioInput {
+    display: flex;
+}
+
+.radioValuesLeft {
+    font-size: 14px;
+    margin-right:5%;
+    margin-top:2%
+}
+
+.radioValuesRight {
+    font-size: 14px;
+    margin-top:2%
+}
+
+input{
+    margin-top:2%;
+}
+
+input#age, input#height, input#weight, input#firstname, input#lastname, input#email, input#phone {
+    width:80%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(255, 166, 0, 0.496);
+    border-width: 1.2px;
+    height: 30px;
+    padding-left:5%;
+    padding-right: 5%;
+}
+
+
+input#age:hover, input#height:hover, input#weight:hover, input#firstname:hover, input#lastname:hover, input#email:hover, input#phone:hover {
+    width:80%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(255, 166, 0, 0.811);
+    border-width: 1.2px;
+    height: 30px;
+    padding-left:5%;
+    padding-right: 5%;
+}
+
+.submitCTA {
+    width:45%;
+    border-radius: 20px;
+    background-color: rgba(255, 166, 0, 0.667);
+    color:white;
+    height:35px;
+    border:none;
+    margin-left:25%;
+}
+
+.submitCTA:hover {
+    width:45%;
+    border-radius: 20px;
+    background-color: rgb(255, 166, 0);
+    color:white;
+    height:35px;
+    border:none;
+    margin-left:25%;
+    cursor:pointer;
+}
+
+.formContainer{
+    margin-left:7%;
+
+}
