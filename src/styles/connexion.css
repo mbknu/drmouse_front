@@ -15,15 +15,15 @@
 .imgnote1 {
     position: absolute;
     width:20vh;
-    top:25%;
-    left:25%;
+    top:28%;
+    left:26%;
     z-index:1
 }
 
 .imgnote2 {
     position: absolute;
     width:20vh;
-    bottom:25%;
+    bottom:34%;
     right:25%;
     z-index:1
 }

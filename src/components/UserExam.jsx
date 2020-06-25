@@ -67,7 +67,7 @@ const UserExam = ({
         </td>
       </tr>
       <Modal show={show} onHide={() => setShow(false)} centered>
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title>Prendre un rendez-vous</Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -82,7 +82,7 @@ const UserExam = ({
           </a>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShow(false)}>
+          <Button variant="secondary" className="fas" onClick={() => setShow(false)}>
             Close
           </Button>
         </Modal.Footer>

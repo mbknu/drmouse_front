@@ -47,8 +47,8 @@ input{
 input#Age, input#Height, input#Weight, input#Firstname, input#Lastname, input#Email, input#Phone, input#Password {
     width:80%;
     border-radius: 20px;
-    border-style: solid;
-    border-color: #3771E2;
+    /* border-style: solid; */
+    /* border-color: #3771E2; */
     border-width: 1.2px;
     height: 30px;
     padding-left:5%;
@@ -59,8 +59,8 @@ input#Age, input#Height, input#Weight, input#Firstname, input#Lastname, input#Em
 input#age:Hover, input#Height:hover, input#Weight:hover, input#Firstname:hover, input#Lastname:hover, input#Email:hover, input#Phone:hover, input#Password:hover {
     width:80%;
     border-radius: 20px;
-    border-style: solid;
-    border-color: #143d8f;
+    /* border-style: solid;
+    border-color: #143d8f; */
     border-width: 1.2px;
     height: 30px;
     padding-left:5%;
