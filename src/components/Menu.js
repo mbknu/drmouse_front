@@ -9,6 +9,7 @@ import ButtonDeconnexion from './ButtonDeconnexion';
 const Menu = ({isAuthenticated}) => {
     const useStyles = makeStyles((theme) => ({
         Button: {
+            fontFamily: 'Exo',
             color: '#3771E2',
             backgroundColor: '#fff',
             '&:hover': {

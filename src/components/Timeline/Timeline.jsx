@@ -68,7 +68,7 @@ export default class Timeline extends React.Component {
         {/* Bounding box for the Timeline */}
         <div
           style={{
-            width: "60%",
+            width: "90%",
             height: "100px",
             margin: "0 auto",
             marginTop: "20px",
