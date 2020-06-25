@@ -1,14 +1,12 @@
-import React from 'react'
-import UserDashboard from './UserDashboard'
+import React from "react";
+import HomeText from "./HomeText";
 
-class HomePage extends React.Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
-}
+const HomePage = () => {
+    return (
+        <>
+            <HomeText />
+        </>
+    );
+};
 
-export default HomePage
+export default HomePage;

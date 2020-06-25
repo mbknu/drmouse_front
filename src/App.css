@@ -532,3 +532,13 @@ a .fa-pen:hover {
 .Return:hover {
   background-color: #edeef3;
 }
+
+.app {
+  background-color: #3771E2;
+}
+
+.logo {
+  width: 10rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
