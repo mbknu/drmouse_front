@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { connect } from 'react-redux';
 import { login } from '../../actions/generalActions';
+import { Redirect } from 'react-router';
 import '../../styles/connexion.css';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
@@ -47,13 +48,13 @@ const ConnexionContainer = ({login, isAuthenticated, history}) => {
         e.preventDefault();
         const client = { email, password };
         login(client);
-        if(isAuthenticated){
-            history.push("/dashboard");
-        };
     };
 
     return (
       <>
+        {isAuthenticated? <Redirect to='/dashboard' email={email} password={password}/> 
+        :
+        <>
         <img className='imgnote1' src={note} alt='note-icon' />
         <div className='connexion'>
             <h4>Connexion patient</h4>
@@ -81,6 +82,8 @@ const ConnexionContainer = ({login, isAuthenticated, history}) => {
             </Button>
         </div>
         <img className='imgnote2' src={note} alt='note-icon' />
+        </>
+        }
       </>
     )
 };

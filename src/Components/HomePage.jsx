@@ -8,7 +8,7 @@ const HomePage = () => {
     return (
         <div className='home'>
             <Menu />
-            <img src={imghome} alt='home image' />
+            <img src={imghome} alt='home concept' />
             <HomeText />
         </div>
     );

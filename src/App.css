@@ -11,7 +11,7 @@
 
 /* OVERALL */
 
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;500;700&display=swap'); */
 
 html {
   background-color: #f7f8fc;
@@ -20,23 +20,12 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: 'Muli', 'Comfortaa', Arial, Helvetica, sans-serif;
   --bg-nav: #363740;
+  background-color: #3771E2;
 }
 
 h3 {
   font-size: 1rem !important;
-}
-
-p,
-h1,
-h2,
-h3,
-label,
-tr,
-th,
-td {
-  font-family: 'Muli', Arial, Helvetica, sans-serif;
 }
 
 /* LOGIN */
@@ -165,7 +154,9 @@ a .fa-pen:hover {
   padding: 1rem 0.5rem;
   background-color: #fff;
   color:#3771E2;
-  border-radius: 20px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
 }
 
 .Admin-brand h1 {
@@ -215,37 +206,26 @@ a .fa-pen:hover {
 
 .Container-Anatomy img {
   object-fit: contain;
+  width: 100%;
 }
 
 .Container-Anatomy .boobs {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #3771E2;
   position: absolute;
   z-index: 2;
   cursor: pointer;
-  top: 25%;
+  top: 23%;
   left: 51%;
-}
-
-.Container-Anatomy .boobs2 {
-  width: 136px;
-  height: 107px;
-  background-image: url('./Components/Images/seins.png');
-  background-size: cover;
-  position: absolute;
-  z-index: 2;
-  cursor: pointer;
-  top: 18%;
-  left: 42.5%;
 }
 
 .Container-Anatomy .uterus {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #3771E2;
   position: absolute;
   z-index: 2;
   cursor: pointer;
@@ -253,23 +233,11 @@ a .fa-pen:hover {
   left: 49%;
 }
 
-.Container-Anatomy .uterus2 {
-  width: 90px;
-  height: 90px;
-  background-image: url('./Components/Images/uterus.png');
-  position: absolute;
-  z-index: 2;
-  cursor: pointer;
-  top: 44%;
-  left: 44.5%;
-}
-
-
 .Container-Anatomy .teeth {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #3771E2;
   position: absolute;
   z-index: 2;
   cursor: pointer;
@@ -277,23 +245,11 @@ a .fa-pen:hover {
   left: 48%;
 }
 
-.Container-Anatomy .teeth2 {
-  width: 70px;
-  height: 70px;
-  background-image: url('./Components/Images/teeth.png');
-  background-size: cover;
-  position: absolute;
-  z-index: 2;
-  cursor: pointer;
-  top: 8%;
-  left: 46%;
-}
-
 .Container-Anatomy .eyes {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #3771E2;
   position: absolute;
   z-index: 2;
   cursor: pointer;
@@ -301,40 +257,29 @@ a .fa-pen:hover {
   left: 47%;
 }
 
-.Container-Anatomy .eyes2 {
-  width: 70px;
-  height: 70px;
-  background-image: url('./Components/Images/eyes.png');
-  background-size: cover;
-  position: absolute;
-  z-index: 2;
-  cursor: pointer;
-  top: 4%;
-  left: 46%;
-}
 
 .Container-Anatomy .colon {
-  width: 100px;
-  height: 100px;
-  background-image: url('./Components/Images/colon.png');
-  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3771E2;
   position: absolute;
   z-index: 2;
   cursor: pointer;
-  top: 36%;
-  left: 44.5%;
+  top: 42%;
+  left: 49%;
 }
 
 .Container-Anatomy .heart {
-  width: 50px;
-  height: 50px;
-  background-image: url('./Components/Images/heart.png');
-  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3771E2;
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   cursor: pointer;
-  top: 20%;
-  left: 50%;
+  top: 28%;
+  left: 52%;
 }
 
 
@@ -344,7 +289,7 @@ a .fa-pen:hover {
   border-radius: 5px;
   /* padding: 30px 30px !important; */
   /* margin: 50px; */
-  width: 40%;
+  width: 30%;
   position: relative;
   z-index: 0;
   display: flex;
@@ -357,7 +302,7 @@ a .fa-pen:hover {
   border-radius: 10px;
   padding: 30px 30px !important;
   margin: 5px;
-  width: 60%;
+  width: 70%;
   /* position: absolute;
   top: 100px; */
 }
@@ -368,6 +313,7 @@ a .fa-pen:hover {
   border-color: #6610f2;
     font-size: 80%;
 } */
+
 
 .btn {
   display: inline-block;
