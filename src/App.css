@@ -514,3 +514,62 @@ a .fa-pen:hover {
 .Return:hover {
   background-color: #edeef3;
 }
+
+@media screen and (max-width: 376px) {
+  .app {
+    min-height: 250vh;
+    min-width: 146vw;
+  }
+
+  .Admin-board {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin-left: 50%;
+  }
+
+  .ContainerBody {
+    background-color: #fff;
+    border: 1px solid #dfe0eb;
+    border-radius: 20px;
+    padding:1rem;
+    margin-right: 4%;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .Container-Table{
+    background-color: #fff;
+    border: 2px solid #dfe0eb;
+    border-radius: 10px;
+    padding: 30px 30px !important;
+    margin: 50px 5px 10px 5px;
+    width: 100%;
+  }
+
+  .Container-Anatomy .uterus {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3771E2;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    top: 49%;
+    left: 46%;
+  }
+
+  .table {
+    width: 10%;
+  }
+
+  /* .table td {
+    font-size: 15px;
+    padding: 0.5rem ;
+  } */
+}
