@@ -1,18 +1,18 @@
 .closeModal {
 margin-left: 95%;
-margin-top: -6%;
+margin-top: -2%;
 }
 
 .closeModal:hover {
     margin-left: 95%;
-    margin-top: -6%;
-    color: red;
+    margin-top: -2%;
+    color: #3771E2;
     cursor: pointer;
     }
 
 .modalTitle {
     text-align: center;
-    margin-top:-8%;
+    margin-top:-2%;
 }
 
 label {
@@ -39,7 +39,7 @@ input{
     margin-top:2%;
 }
 
-input#age, input#height, input#weight, input#firstname, input#lastname, input#email, input#phone {
+input#Age, input#Height, input#Weight, input#Firstname, input#Lastname, input#Email, input#Phone, input#Password {
     width:80%;
     border-radius: 20px;
     border-style: solid;
@@ -51,7 +51,7 @@ input#age, input#height, input#weight, input#firstname, input#lastname, input#em
 }
 
 
-input#age:hover, input#height:hover, input#weight:hover, input#firstname:hover, input#lastname:hover, input#email:hover, input#phone:hover {
+input#age:Hover, input#Height:hover, input#Weight:hover, input#Firstname:hover, input#Lastname:hover, input#Email:hover, input#Phone:hover, input#Password:hover {
     width:80%;
     border-radius: 20px;
     border-style: solid;
