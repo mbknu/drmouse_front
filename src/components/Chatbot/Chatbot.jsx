@@ -17,7 +17,7 @@ const Chatbot = (props) => {
         {/* <div> {showChat ? <SimpleForm></SimpleForm> : null} </div> */}
         <div>
           {!showChat 
-            ? <button className="btn" onClick={() => startChat()}>CareBot </button> 
+            ? <button className="btn" onClick={() => startChat()}>Assistant Caremind</button> 
             : <button className="btn" onClick={() => hideChat()}>Fermer </button>}
         </div>
       </div>      

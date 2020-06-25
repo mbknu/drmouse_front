@@ -1,5 +1,5 @@
 .home-img {
-    height: 60vh;
+    height: 45vh;
     margin: auto;
     margin-bottom: -0.5rem;
 }
@@ -35,8 +35,12 @@
 
 .home-text-two {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 1rem 15%;
+    margin-bottom: 4vw;
+    margin-top: 4vw;
 }
 
 .home-btn {
@@ -44,6 +48,7 @@
     display: flex;
     justify-content: space-between;
     margin: 2rem 0;
+    outline: none;
 }
 
 .vide {
