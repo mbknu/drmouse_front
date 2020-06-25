@@ -1,0 +1,13 @@
+.text-center {
+    display: flex;
+    justify-content: center;
+}
+.timeline-wrapper {
+    margin-top: 5px;
+}
+
+.lotties-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

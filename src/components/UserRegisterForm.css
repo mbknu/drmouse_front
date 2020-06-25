@@ -1,0 +1,89 @@
+.closeModal {
+margin-left: 95%;
+margin-top: -2%;
+}
+
+.closeModal:hover {
+    margin-left: 95%;
+    margin-top: -2%;
+    color: #3771E2;
+    cursor: pointer;
+    }
+
+.modalTitle {
+    text-align: center;
+    margin-top:-2%;
+}
+
+label {
+    color: grey;
+    font-size:12px;
+}
+
+.radioInput {
+    display: flex;
+}
+
+.radioValuesLeft {
+    font-size: 14px;
+    margin-right:5%;
+    margin-top:2%
+}
+
+.radioValuesRight {
+    font-size: 14px;
+    margin-top:2%
+}
+
+input{
+    margin-top:2%;
+}
+
+input#Age, input#Height, input#Weight, input#Firstname, input#Lastname, input#Email, input#Phone, input#Password {
+    width:80%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(255, 166, 0, 0.496);
+    border-width: 1.2px;
+    height: 30px;
+    padding-left:5%;
+    padding-right: 5%;
+}
+
+
+input#age:Hover, input#Height:hover, input#Weight:hover, input#Firstname:hover, input#Lastname:hover, input#Email:hover, input#Phone:hover, input#Password:hover {
+    width:80%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(255, 166, 0, 0.811);
+    border-width: 1.2px;
+    height: 30px;
+    padding-left:5%;
+    padding-right: 5%;
+}
+
+.submitCTA {
+    width:45%;
+    border-radius: 20px;
+    background-color: rgba(255, 166, 0, 0.667);
+    color:white;
+    height:35px;
+    border:none;
+    margin-left:25%;
+}
+
+.submitCTA:hover {
+    width:45%;
+    border-radius: 20px;
+    background-color: rgb(255, 166, 0);
+    color:white;
+    height:35px;
+    border:none;
+    margin-left:25%;
+    cursor:pointer;
+}
+
+.formContainer{
+    margin-left:7%;
+
+}

@@ -2,8 +2,10 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import "../styles/Home.css";
+import UserRegisterForm from './UserRegisterForm'
+import Timeline from "./Timeline/Timeline";
 
-const HomeText = () => {
+const HomeText = (props) => {
     const useStyles = makeStyles((theme) => ({
         Button: {
             color: "white",
@@ -39,14 +41,7 @@ const HomeText = () => {
                 <h4>Rappel d'examens médicaux</h4>
                 <h4>Prise de rendez-vous</h4>
                 <div className="home-btn" >
-                    <Button
-                        className={classes.Button}
-                        variant="contained"
-                        color="primary"
-                        onClick="#"
-                    >
-                        Je suis patient
-                    </Button>
+                    <UserRegisterForm />
                     <Button
                         className={classes.Button}
                         variant="contained"
@@ -63,6 +58,7 @@ const HomeText = () => {
                 <h4>Être alerté lors d'un examen à prendre</h4>
                 <h4>Comprendre les enjeux de celui-ci</h4>
             </div>
+            <Timeline />
         </div>
     );
 };
