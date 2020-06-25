@@ -3,11 +3,11 @@
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 20px;
     width: 40%;
     margin: auto;
     padding: 1rem;
-    margin-top: 50vh;
+    margin-top: 40vh;
     transform: translateY(-50%);
     color: #3771E2;
     position: relative;
@@ -26,4 +26,17 @@
     bottom:25%;
     right:25%;
     z-index:1
+}
+
+.buttons-co {
+    position: absolute;
+    right: 1rem;
+    top:2rem;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-co a {
+    text-decoration: none;
 }
