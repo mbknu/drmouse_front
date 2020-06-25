@@ -12,10 +12,10 @@ const UserExam = ({
         <td>{index}</td>
         <td>{title}</td>
         <td>{description}</td>
-        <td>{age} ans</td>
         <td>
           <div className="badge badge-pill badge-info">On Hold</div>
         </td>
+        <td>{age} ans</td>
         <td>
           <button className="btn-shadow btn btn-secondary btn-focus">Create</button>
         </td>

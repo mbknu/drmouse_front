@@ -3,6 +3,7 @@ import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import "../styles/Home.css";
 import UserRegisterForm from './UserRegisterForm'
+import Timeline from "./Timeline/Timeline";
 
 const HomeText = (props) => {
     const useStyles = makeStyles((theme) => ({
@@ -57,6 +58,7 @@ const HomeText = (props) => {
                 <h4>Être alerté lors d'un examen à prendre</h4>
                 <h4>Comprendre les enjeux de celui-ci</h4>
             </div>
+            <Timeline />
         </div>
     );
 };
