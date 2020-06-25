@@ -1,39 +1,16 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { connect } from 'react-redux';
 import "../styles/Home.css";
 import Timeline from "./Timeline/Timeline";
 import Chatbot from "./Chatbot/Chatbot";
 
-const HomeText = (props) => {
-    const useStyles = makeStyles((theme) => ({
-        Button: {
-            color: "white",
-            backgroundColor: "#3771E2",
-            "&:hover": {
-                background: "#3771E2",
-            },
-            borderRadius: "20px",
-        },
-        root: {
-            display: "flex",
-            flexDirection: "column",
-            "& > *": {
-                margin: theme.spacing(1),
-                width: "25ch",
-            },
-            "& label.Mui-focused": {
-                color: "#3771E2",
-            },
-            "& .MuiOutlinedInput-root": {
-                "&.Mui-focused fieldset": {
-                    borderColor: "#3771E2",
-                },
-            },
-        },
-    }));
-    const classes = useStyles();
+const HomeText = ({isAuthenticated}) => {
     return (
         <div className="home-container">
+        {isAuthenticated ? ''
+            :
+            <>
             <div className="home-info">
                 <div className="part-one">
                     <div className="home-mission" >
@@ -48,14 +25,19 @@ const HomeText = (props) => {
                         <h3>Informations prévention</h3>
                     </div>
                 </div>
-                <div className="part-two">
+                   </>}
+        <div className="part-two">
                     <Timeline />
-                </div>
             </div>
-
             <Chatbot />
         </div>
     );
 };
 
-export default HomeText;
+const mapStateToProps = state => {
+    return {
+        isAuthenticated: state.auth.isAuthenticated
+    };
+  };
+  
+export default connect(mapStateToProps)(HomeText);

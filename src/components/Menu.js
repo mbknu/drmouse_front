@@ -1,10 +1,12 @@
 import React from "react";
 import {Link} from 'react-router-dom';
+import { connect } from 'react-redux';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import '../styles/connexion.css';
+import ButtonDeconnexion from './ButtonDeconnexion';
 
-const Menu = (props) => {
+const Menu = ({isAuthenticated}) => {
     const useStyles = makeStyles((theme) => ({
         Button: {
             fontFamily: 'Exo',
@@ -14,6 +16,7 @@ const Menu = (props) => {
               background: '#fff',
             },
             borderRadius: '20px',
+            marginLeft:'1rem'
           },
         root: {
             display:'flex',
@@ -37,6 +40,19 @@ const Menu = (props) => {
 
     return (
         <div className="buttons-co">
+            {isAuthenticated ? 
+            <><Link to='/dashboard' >
+                <Button 
+                    className={classes.Button}
+                    variant="contained" 
+                    color="primary"
+                >
+                    Mon dashboard
+                </Button>
+            </Link>
+            <ButtonDeconnexion />
+            </>
+            :
             <Link to='/login' >
                 <Button 
                     className={classes.Button}
@@ -45,9 +61,15 @@ const Menu = (props) => {
                 >
                     Connexion patient
                 </Button>
-            </Link>
+            </Link>}
         </div>
     );
 };
 
-export default Menu;
+const mapStateToProps = state => {
+  return {
+      isAuthenticated: state.auth.isAuthenticated
+  };
+};
+
+export default connect(mapStateToProps)(Menu);

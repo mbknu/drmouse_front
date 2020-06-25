@@ -1,15 +1,18 @@
 import React from "react";
+import { connect } from 'react-redux';
 import HomeText from "./HomeText";
 import Menu from "./Menu";
 import imghome from "../img/home.svg";
 import UserRegisterForm from "./UserRegisterForm";
 import "../styles/Home.css";
 
-const HomePage = () => {
+const HomePage = ({isAuthenticated}) => {
     return (
         <div className="home">
             <Menu />
-            <div className="home-banner">
+                    {isAuthenticated ? <div className='vide'/>:<img className="home-img" src={imghome} alt='home concept' />}
+            <HomeText />
+          <div className="home-banner">
                 <img className="home-img" src={imghome} alt="home concept" />
                 <div className="home-text-one">
                     <h1>
@@ -20,9 +23,14 @@ const HomePage = () => {
                         <UserRegisterForm />
                 </div>
             </div>
-            <HomeText />
         </div>
     );
 };
+       
+const mapStateToProps = state => {
+    return {
+        isAuthenticated: state.auth.isAuthenticated
+    };
+};
 
-export default HomePage;
+export default connect(mapStateToProps)(HomePage);

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import ButtonDeconnexion from './ButtonDeconnexion';
 import Table from 'react-bootstrap/Table';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
@@ -13,12 +12,12 @@ import PopoverEyes from './Popovers/PopoverEyes';
 import PopoverColon from './Popovers/PopoverColon';
 import PopoverHeart from './Popovers/PopoverHeart';
 import UserExam from './UserExam';
-import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import '../App.css';
 
 import { connect } from 'react-redux';
 import { loadUser } from '../actions/generalActions';
+import Profil from './Profil';
 
 const UserDashboard = ({loadUser, email, password, patient, isAuthenticated}) => {
 
@@ -112,10 +111,7 @@ const UserDashboard = ({loadUser, email, password, patient, isAuthenticated}) =>
           <div className="Container-Table">
             <div className="Panel">
               <div className="ActionPanel ContainerButton col-md-11">
-                  <ButtonAction name="Mon Profil" display="AddUser" />
-              </div>
-              <div className="ActionPanel ContainerButton col-md-1">
-                  <ButtonAction name="Modifier" display="AddUser" />
+                  <Profil patient={clientInfo}/>
               </div>
             </div>
             <Table hover>

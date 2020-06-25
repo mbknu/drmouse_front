@@ -52,8 +52,9 @@
 
 .part-one {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 30%;
 }
 
@@ -69,9 +70,14 @@
     justify-content: space-evenly;
 }
 
+
 .part-two {
     display: flex;
     width: 70%;
     justify-content: center;
     padding-left: 2rem;
+}
+
+.vide {
+    height: 2rem;
 }
