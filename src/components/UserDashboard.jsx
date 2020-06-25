@@ -17,6 +17,7 @@ import '../App.css';
 
 import { connect } from 'react-redux';
 import { loadUser } from '../actions/generalActions';
+import Profil from './Profil';
 
 const UserDashboard = ({loadUser, email, password, patient, isAuthenticated}) => {
 
@@ -110,10 +111,7 @@ const UserDashboard = ({loadUser, email, password, patient, isAuthenticated}) =>
           <div className="Container-Table">
             <div className="Panel">
               <div className="ActionPanel ContainerButton col-md-11">
-                  <ButtonAction name="Mon Profil" display="AddUser" />
-              </div>
-              <div className="ActionPanel ContainerButton col-md-1">
-                  <ButtonAction name="Modifier" display="AddUser" />
+                  <Profil patient={clientInfo}/>
               </div>
             </div>
             <Table hover>

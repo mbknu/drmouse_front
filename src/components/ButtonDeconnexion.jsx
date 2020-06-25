@@ -7,36 +7,33 @@ import { connect } from 'react-redux';
 import { logout } from '../actions/generalActions';
 
 const ButtonDeconnexion = ({logout}) => {
-    const useStyles = makeStyles((theme) => ({
-        Button: {
-            color: 'white',
-            backgroundColor: '#fff',
-            color:'#3771E2',
-            marginLeft:'1rem',
-            '&:hover': {
-              background: '#fff',
-            },
-            borderRadius: '15px',
-            width: '200px',
-            height: '55.63px'
-          },
-        root: {
-            display:'flex',
-            flexDirection:'column',
-          '& > *': {
-            margin: theme.spacing(1),
-            width: '30ch',
-          },
-          '& label.Mui-focused': {
-            color: '#fff',
-          },
-          '& .MuiOutlinedInput-root': {
-            '&.Mui-focused fieldset': {
-              borderColor: '#fff',
-            },
-          },
+  const useStyles = makeStyles((theme) => ({
+    Button: {
+        color: '#3771E2',
+        backgroundColor: '#fff',
+        '&:hover': {
+          background: '#fff',
         },
-      }));
+        borderRadius: '20px',
+        marginLeft:'1rem'
+      },
+    root: {
+        display:'flex',
+        flexDirection:'column',
+      '& > *': {
+        margin: theme.spacing(1),
+        width: '25ch',
+      },
+      '& label.Mui-focused': {
+        color: '#fff',
+      },
+      '& .MuiOutlinedInput-root': {
+        '&.Mui-focused fieldset': {
+          borderColor: '#fff',
+        },
+      },
+    },
+}));
       const classes = useStyles();
   
   return (
