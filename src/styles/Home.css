@@ -1,6 +1,32 @@
+<<<<<<< HEAD
 .home-container {
     width: 100%;
     margin: 2rem 0;
+=======
+.home img {
+    height: 60vh;
+    margin: auto;
+    margin-bottom: -0.5rem;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    color: #1f1e1e;
+}
+
+.home hr {
+    width: 90%;
+    opacity: 0.4;
+}
+
+.home h4 {
+    margin: 0;
+}
+
+.home-container {
+    width: 100%;
+>>>>>>> a24992df6ec2ef6f75cc9b47962fd38e19e5492b
     background-color: #FFFFFF;
 }
 

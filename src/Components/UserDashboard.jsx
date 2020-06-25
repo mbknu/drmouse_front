@@ -35,12 +35,7 @@ const UserDashboard = () => {
     <>
     <header>
       <div className="Header-container">
-        <div className="Admin-brand col-md-3">
-          <h1>Logo de Mathilde</h1>
-        </div>
         <div className="Admin-board col-md-7">
-          <span className="fas fa-search" />
-          <span className="fas fa-bell" />
           <div className="Admin-name">
             David Faure
           </div>
@@ -52,7 +47,6 @@ const UserDashboard = () => {
             role="button"
             tabIndex={0}
           >
-            <span className="fas fa-power-off" />
           </div>
         </div>
       </div>
@@ -128,4 +122,3 @@ const UserDashboard = () => {
 };
 
 export default UserDashboard;
-

@@ -15,7 +15,7 @@ const ConnexionContainer = ({login, isAuthenticated, history}) => {
             '&:hover': {
               background: '#3771E2',
             },
-            borderRadius: '10px',
+            borderRadius: '20px',
           },
         root: {
             display:'flex',
