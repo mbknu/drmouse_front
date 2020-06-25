@@ -1,0 +1,15 @@
+.bot {
+    bottom: 0;
+    right : 0;
+    position: fixed;
+    width: 350px;
+  }
+  
+  .btn {
+    font-size: 20px;
+    float: right;
+    width: 100%;
+    padding: 8px;
+    color: white;
+    background-color: rgb(15, 13, 136)
+  }
