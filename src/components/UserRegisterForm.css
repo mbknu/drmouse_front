@@ -48,7 +48,7 @@ input#Age, input#Height, input#Weight, input#Firstname, input#Lastname, input#Em
     width:80%;
     border-radius: 20px;
     border-style: solid;
-    border-color: rgba(255, 166, 0, 0);
+    border-color: #3771E2;
     border-width: 1.2px;
     height: 30px;
     padding-left:5%;
@@ -60,7 +60,7 @@ input#age:Hover, input#Height:hover, input#Weight:hover, input#Firstname:hover, 
     width:80%;
     border-radius: 20px;
     border-style: solid;
-    border-color: rgba(255, 166, 0, 0);
+    border-color: #143d8f;
     border-width: 1.2px;
     height: 30px;
     padding-left:5%;
@@ -70,7 +70,7 @@ input#age:Hover, input#Height:hover, input#Weight:hover, input#Firstname:hover, 
 .submitCTA {
     width:45%;
     border-radius: 20px;
-    background-color: #3770e2de;
+    background-color: #3771E2;
     color:white;
     height:45px;
     border:none;
@@ -81,7 +81,7 @@ input#age:Hover, input#Height:hover, input#Weight:hover, input#Firstname:hover, 
 .submitCTA:hover {
     width:45%;
     border-radius: 20px;
-    background-color: #3771E2;
+    background-color: #143d8f;
     color:white;
     height:45px;
     border:none;
