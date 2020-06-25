@@ -38,7 +38,7 @@ const ButtonDeconnexion = ({logout}) => {
       const classes = useStyles();
   
   return (
-        <Link to='/login' >
+        <Link to='/' >
             <Button 
                 className={classes.Button}
                 variant="contained" 

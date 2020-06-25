@@ -118,7 +118,7 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
     const classes = useStyles();
     return (
         <div>
-                {isAuthenticated? <Redirect to='/login' email1={email} password1={password}/> 
+                {isAuthenticated === false ? <Redirect to='/login' email1={email} password1={password}/> 
         : <>
             <Button
                 className={classes.Button}
