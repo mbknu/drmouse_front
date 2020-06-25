@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#3333ff",
         "activityBar.activeBorder": "#600000",
@@ -19,6 +18,4 @@
         "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.color": "#0000ff"
-=======
->>>>>>> feat/timelinev2
 }
