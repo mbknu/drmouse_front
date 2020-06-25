@@ -40,7 +40,7 @@ const HomeText = (props) => {
             <div className="home-text-one">
                 <h2>Mieux prévenir pour mieux soigner</h2>
                 <h4>Rappel d'examens médicaux</h4>
-                <h4>Prise de rendez-vous</h4>
+                <h4>Aide à la prise de rendez-vous</h4>
                 <div className="home-btn" >
                     <UserRegisterForm />
                     <Button

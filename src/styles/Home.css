@@ -1,5 +1,5 @@
 .home-img {
-    height: 60vh;
+    height: 45vh;
     margin: auto;
     margin-bottom: -0.5rem;
 }
@@ -42,4 +42,5 @@
     display: flex;
     justify-content: space-between;
     margin: 2rem 0;
+    outline: none;
 }

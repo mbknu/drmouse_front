@@ -35,8 +35,10 @@
     width: 30vw;
     display: flex;
     justify-content: space-between;
+    outline: none;
 }
 
 .buttons-co a {
     text-decoration: none;
+    outline: none;
 }

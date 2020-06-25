@@ -58,7 +58,7 @@ export default class Timeline extends React.Component {
         <div>
             <div className="lotties-wrapper">
                 <div className="logo-text">
-                <h5>Le saviez vous ?</h5>
+                <h5>Le saviez-vous ?</h5>
                 <LogoTimeline />
                 
                 </div>
