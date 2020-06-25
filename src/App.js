@@ -5,6 +5,7 @@ import UserDashboard from './components/UserDashboard'
 import UserRegisterForm from './components/UserRegisterForm'
 import Header from './components/Header';
 import ConnexionContainer from './components/Connexion/ConnexionContainer';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
       <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route path='/login' component={ConnexionContainer} />
-        <Route path='/UserForm' component={UserRegisterForm} />
-        <Route path='/dashboard' component={UserDashboard} />
+        <Route exact path='/login' component={ConnexionContainer} />
+        <Route exact path='/UserForm' component={UserRegisterForm} />
+        <Route exact path='/dashboard' component={UserDashboard} />
       </Switch>
+      <Footer />
     </div>
   );
 };

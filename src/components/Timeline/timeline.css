@@ -17,3 +17,11 @@
 .logo-text h5 {
     margin-bottom: 15px;
 }
+
+.timeline-wrapper li {
+    background-image: none !important;
+}
+
+.button-back, .button-forward {
+    display:none
+}
