@@ -84,9 +84,9 @@ const UserDashboard = ({loadUser, email, password, patient}) => {
       <>
         <header>
           <div className="Header-container">
-            <div className="Admin-board col-md-7">
+            <div className="Admin-board col-md-10">
               <div className="Admin-name">
-                {clientInfo.firstname} {clientInfo.lastname}
+                {clientInfo.firstname.toUpperCase()} {clientInfo.lastname.toUpperCase()}
               </div>
               <ButtonDeconnexion />
             </div>
@@ -116,10 +116,10 @@ const UserDashboard = ({loadUser, email, password, patient}) => {
           </div>
           <div className="Container-Table">
             <div className="Panel">
-              <div className="ActionPanel ContainerButton col-md-9">
+              <div className="ActionPanel ContainerButton col-md-11">
                   <ButtonAction name="Mon Profil" display="AddUser" />
               </div>
-              <div className="ActionPanel ContainerButton col-md-3">
+              <div className="ActionPanel ContainerButton col-md-1">
                   <ButtonAction name="Modifier" display="AddUser" />
               </div>
             </div>
@@ -144,6 +144,7 @@ const UserDashboard = ({loadUser, email, password, patient}) => {
                     age={element.age}
                     title={element.title}
                     description={element.description}
+                    female={element.female}
                   />
                 ))}
               </tbody>
