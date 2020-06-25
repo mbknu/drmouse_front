@@ -1,8 +1,8 @@
 .text-center {
     display: flex;
     justify-content: center;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: 2%;
+    margin-left: 5%;
     padding-bottom: 125px;
 }
 .timeline-wrapper {
@@ -10,12 +10,15 @@
 }
 
 .lotties-wrapper {
+    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .logo-text h5 {
     margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .timeline-wrapper li {

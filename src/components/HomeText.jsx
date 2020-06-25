@@ -1,10 +1,8 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import "../styles/Home.css";
-import UserRegisterForm from './UserRegisterForm'
 import Timeline from "./Timeline/Timeline";
-import Chatbot from "./Chatbot/Chatbot"
+import Chatbot from "./Chatbot/Chatbot";
 
 const HomeText = (props) => {
     const useStyles = makeStyles((theme) => ({
@@ -36,29 +34,25 @@ const HomeText = (props) => {
     const classes = useStyles();
     return (
         <div className="home-container">
-            <div className="home-text-one">
-                <h2>Mieux prévenir pour mieux soigner</h2>
-                <h4>Rappel d'examens médicaux</h4>
-                <h4>Aide à la prise de rendez-vous</h4>
-                <div className="home-btn" >
-                    <UserRegisterForm />
-                    <Button
-                        className={classes.Button}
-                        variant="contained"
-                        color="primary"
-                        onClick="#"
-                    >
-                        Je suis professionnel de santé
-                    </Button>
+            <div className="home-info">
+                <div className="part-one">
+                    <div className="home-mission" >
+                        <h2>Notre mission : la prévention</h2>
+                    </div>
+                    <hr />
+                    <h2>Nos atouts</h2>
+                    <div className="home-benefits" >
+                        <h3>Prévisualisation des rendez-vous clés</h3>
+                        <h3>Rappel d'examens médicaux</h3>
+                        <h3>Aide à la prise de rendez-vous</h3>
+                        <h3>Informations prévention</h3>
+                    </div>
+                </div>
+                <div className="part-two">
+                    <Timeline />
                 </div>
             </div>
-            <hr />
-            <div className="home-text-two">
-                <h2>Prévisualisez vos rendez-vous clés pour une bonne santé</h2>
-                <h4>Être alerté lors d'un examen à prendre</h4>
-                <h4>Comprendre les enjeux de celui-ci</h4>
-            </div>
-            <Timeline />
+
             <Chatbot />
         </div>
     );

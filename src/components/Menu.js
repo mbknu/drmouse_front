@@ -7,6 +7,7 @@ import '../styles/connexion.css';
 const Menu = (props) => {
     const useStyles = makeStyles((theme) => ({
         Button: {
+            fontFamily: 'Exo',
             color: '#3771E2',
             backgroundColor: '#fff',
             '&:hover': {
@@ -36,14 +37,6 @@ const Menu = (props) => {
 
     return (
         <div className="buttons-co">
-           <Button 
-                className={classes.Button}
-                variant="contained" 
-                color="primary"
-                onClick='#'
-            >
-                Connexion professionnel
-            </Button>
             <Link to='/login' >
                 <Button 
                     className={classes.Button}

@@ -89,10 +89,12 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
 
     const useStyles = makeStyles((theme) => ({
         Button: {
-            color: "white",
-            backgroundColor: "#3771E2",
+            fontFamily: 'Exo',
+            color: "#3771E2",
+            backgroundColor: "#FFFFFF",
             "&:hover": {
-                background: "#3771E2",
+                background: "#143d8",
+                color: "#FFFFFF",
             },
             borderRadius: "20px",
         },
@@ -126,7 +128,7 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
                 color="primary"
                 onClick={handleOpenModal}
             >
-                Je suis patient
+                Je crée mon compte
                 </Button>
             <Modal
                 isOpen={showModal}
