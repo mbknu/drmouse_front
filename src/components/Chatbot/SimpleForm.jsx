@@ -5,11 +5,11 @@ import Review from './Review';
 
 const theme = {
     background: '#f5f8fb',
-    fontFamily: 'Helvetica Neue',
-    headerBgColor: '#EF6C00',
+    fontFamily: 'Roboto',
+    headerBgColor: '#143d8f',
     headerFontColor: '#fff',
     headerFontSize: '15px',
-    botBubbleColor: '#EF6C00',
+    botBubbleColor: '#3771E2',
     botFontColor: '#fff',
     userBubbleColor: '#fff',
     userFontColor: '#4a4a4a',
@@ -56,7 +56,7 @@ class SimpleForm extends Component {
                 if (isNaN(value)) {
                   return 'Chiffre incorrect';
                 } else if (value <= 0) {
-                  return 'Comment-ça ?';
+                  return 'Il y a une erreur';
                 } else if (value >= 120) {
                   return `${value}? Sérieusement !?`;
                 }
@@ -117,25 +117,26 @@ class SimpleForm extends Component {
             },
             {
               id: '8',
-              message: 'Je vais t\'aider ! Quel est ton souci de santé ?',
-              trigger: 'souci'      
+              message: 'Savez-vous qu\'à partir de 50 ans, il est conseillé de faire une mammographie tous les deux ans ?',
+              trigger: '9' 
+            },
+            { id: '9',
+              options: [
+                { value: 'yes', label: 'Oui', trigger: 'end-message' },
+                { value: 'no', label: 'Non', trigger: '10' },
+              ],  
             },
             {
-              id: 'souci',
-              user: true,
-              trigger: '9',
-            },
-            {
-              id: '9',
-              message: 'Si j\'ai bien compris ton souci est le suivant : {previousValue}',
-              trigger: 'end-message',
+              id: '10',
+              component: (
+                <div>Je vous propose de prendre un rendez-vous dès à présent sur <a href="https://www.doctolib.fr/" target="_blank" style={{color: "#ffffff", textDecoration: "underline"}}>Doctolib.fr</a></div>
+            ),
+            asMessage: true,
+
             },
             {
               id: 'end-message',
-              component: (
-                  <div> Liens : <a href="https://www.google.fr">Google.fr</a></div>
-              ),
-              asMessage: true,
+              message: 'Merci d\'avoir discuté avec moi, bonne journée',
               end: true,
             },
           ]}
