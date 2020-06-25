@@ -38,8 +38,7 @@ const HomeText = (props) => {
         <div className="home-container">
             <div className="home-text-one">
                 <h2>Mieux <span style={{fontWeight: "600"}}>prévenir</span> pour mieux <span style={{fontWeight: "600"}}>soigner</span></h2>
-                <h4>Rappel d'examens médicaux</h4>
-                <h4>Aide à la prise de rendez-vous</h4>
+                <h4>Rappel d'examens médicaux. Aide à la prise de rendez-vous</h4>
                 <div className="home-btn" >
                     <UserRegisterForm />
                     <Button

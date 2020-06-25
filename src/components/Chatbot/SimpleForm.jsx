@@ -5,7 +5,7 @@ import Review from './Review';
 
 const theme = {
     background: '#f5f8fb',
-    fontFamily: 'Roboto',
+    fontFamily: 'Exo',
     headerBgColor: '#143d8f',
     headerFontColor: '#fff',
     headerFontSize: '15px',
