@@ -63,7 +63,7 @@ const UserDashboard = ({loadUser, email, password, patient, isAuthenticated}) =>
       clientInfo = patient.authdata.result[0];
     }
 
-    console.log('patient email', email)
+    console.log('patient ', patient)
   const getUserExam = () => {
     const url = 'http://localhost:3000/api/users/1/exams';
 
@@ -152,6 +152,7 @@ const UserDashboard = ({loadUser, email, password, patient, isAuthenticated}) =>
 };
 
 const mapStateToProps = state => {
+  console.log(state)
   return {
       patient: state.auth.user,
       isAuthenticated: state.auth.isAuthenticated,

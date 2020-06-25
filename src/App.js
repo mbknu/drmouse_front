@@ -13,9 +13,9 @@ function App() {
       <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route path='/login' component={ConnexionContainer} />
-        <Route path='/UserForm' component={UserRegisterForm} />
-        <Route path='/dashboard' component={UserDashboard} />
+        <Route exact path='/login' component={ConnexionContainer} />
+        <Route exact path='/UserForm' component={UserRegisterForm} />
+        <Route exact path='/dashboard' component={UserDashboard} />
       </Switch>
       <Footer />
     </div>
