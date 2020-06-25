@@ -37,7 +37,7 @@ const HomeText = (props) => {
     return (
         <div className="home-container">
             <div className="home-text-one">
-                <h2>Mieux prévenir pour mieux soigner</h2>
+                <h2>Mieux <span style={{fontWeight: "600"}}>prévenir</span> pour mieux <span style={{fontWeight: "600"}}>soigner</span></h2>
                 <h4>Rappel d'examens médicaux</h4>
                 <h4>Aide à la prise de rendez-vous</h4>
                 <div className="home-btn" >
@@ -54,9 +54,8 @@ const HomeText = (props) => {
             </div>
             <hr />
             <div className="home-text-two">
-                <h2>Prévisualisez vos rendez-vous clés pour une bonne santé</h2>
-                <h4>Être alerté lors d'un examen à prendre</h4>
-                <h4>Comprendre les enjeux de celui-ci</h4>
+                <h2>Prévisualisez vos <span style={{color: "#3771E2"}}>rendez-vous clés</span> pour une bonne santé</h2>
+                <h4>Être alerté lors d'un examen à prendre. Comprendre les enjeux de celui-ci</h4>
             </div>
             <Timeline />
             <Chatbot />

@@ -35,8 +35,12 @@
 
 .home-text-two {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 1rem 15%;
+    margin-bottom: 4vw;
+    margin-top: 4vw;
 }
 
 .home-btn {
