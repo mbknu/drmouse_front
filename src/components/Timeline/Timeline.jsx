@@ -73,7 +73,7 @@ export default class Timeline extends React.Component {
             margin: "0 auto",
             marginTop: "20px",
             fontSize: "15px",
-            color: "white"
+            color: "white",
           }}
         >
           <HorizontalTimeline
@@ -82,6 +82,8 @@ export default class Timeline extends React.Component {
               foreground: "#1A79AD",
               outline: "#dfdfdf",
             }}
+            getLabel={() => ('')}
+            lawidth={0}
             index={this.state.curIdx}
             indexClick={index => {
               const curIdx = this.state.curIdx;
