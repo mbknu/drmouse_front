@@ -1,0 +1,19 @@
+.bot {
+    bottom: 0;
+    right : 0;
+    position: fixed;
+    width: 350px;
+  }
+  
+  .btn {
+    font-size: 20px;
+    float: right;
+    width: 50%;
+    padding: 8px;
+    color: white;
+    font-family: 'Roboto', sans-serif; 
+    background-color: #143d8f;
+  }
+  .btn:hover {
+    color: #c8e6fe;
+  }

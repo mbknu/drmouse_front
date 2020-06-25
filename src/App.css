@@ -164,11 +164,11 @@ a .fa-pen:hover {
 
 .Admin-name {
   font-size: 1rem;
-  padding: 1rem 0.5rem;
+  padding-top: 15px;
   background-color: #fff;
   color:#3771E2;
   border-radius: 15px;
-  width: 300px;
+  width: 200px;
   text-align: center;
 }
 
@@ -250,7 +250,7 @@ a .fa-pen:hover {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #3771E2;
+  background-color: green;
   position: absolute;
   z-index: 2;
   cursor: pointer;
@@ -286,7 +286,7 @@ a .fa-pen:hover {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #3771E2;
+  background-color: green;
   position: absolute;
   z-index: 2;
   cursor: pointer;
@@ -307,6 +307,22 @@ a .fa-pen:hover {
   display: flex;
   justify-content: center;
 }
+
+.doctolibImg {
+  width: 30%;
+  margin: 30px;
+}
+
+.pagesJauneImg {
+  width: 10%;
+  margin: 30px;
+}
+
+.rdvImg {
+  width: 20%;
+  margin: 30px;
+}
+
 
 .Container-Table{
   background-color: #fff;

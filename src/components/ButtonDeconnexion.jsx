@@ -17,6 +17,8 @@ const ButtonDeconnexion = ({logout}) => {
               background: '#fff',
             },
             borderRadius: '15px',
+            width: '200px',
+            height: '55.63px'
           },
         root: {
             display:'flex',

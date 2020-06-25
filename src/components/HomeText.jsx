@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import "../styles/Home.css";
 import UserRegisterForm from './UserRegisterForm'
 import Timeline from "./Timeline/Timeline";
+import Chatbot from "./Chatbot/Chatbot"
 
 const HomeText = (props) => {
     const useStyles = makeStyles((theme) => ({
@@ -58,6 +59,7 @@ const HomeText = (props) => {
                 <h4>Comprendre les enjeux de celui-ci</h4>
             </div>
             <Timeline />
+            <Chatbot />
         </div>
     );
 };
