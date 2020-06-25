@@ -1,6 +1,7 @@
 .closeModal {
 margin-left: 95%;
 margin-top: -2%;
+font-weight: bolder;
 }
 
 .closeModal:hover {
@@ -8,31 +9,35 @@ margin-top: -2%;
     margin-top: -2%;
     color: #3771E2;
     cursor: pointer;
+    font-weight: bolder;
     }
 
 .modalTitle {
     text-align: center;
     margin-top:-2%;
+    color:#3771E2;
 }
 
 label {
-    color: grey;
+    color: #3771E2;
     font-size:12px;
+    margin-left:2%;
 }
 
 .radioInput {
     display: flex;
+    margin-left:2%;
 }
 
 .radioValuesLeft {
     font-size: 14px;
     margin-right:5%;
-    margin-top:2%
+    margin-top:-1%
 }
 
 .radioValuesRight {
     font-size: 14px;
-    margin-top:2%
+    margin-top:-1%
 }
 
 input{
@@ -67,9 +72,10 @@ input#age:Hover, input#Height:hover, input#Weight:hover, input#Firstname:hover, 
     border-radius: 20px;
     background-color: #3771E2;
     color:white;
-    height:35px;
+    height:45px;
     border:none;
     margin-left:25%;
+    margin-top:-20%;
 }
 
 .submitCTA:hover {
@@ -77,10 +83,11 @@ input#age:Hover, input#Height:hover, input#Weight:hover, input#Firstname:hover, 
     border-radius: 20px;
     background-color: #143d8f;
     color:white;
-    height:35px;
+    height:45px;
     border:none;
     margin-left:25%;
     cursor:pointer;
+    margin-top:-20%;
 }
 
 .formContainer{

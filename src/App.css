@@ -1,5 +1,6 @@
 .app {
   background-color: #3771E2;
+  min-height: 100vh;
 }
 
 .logo {
@@ -9,10 +10,21 @@
   position: relative;
 }
 
+.footer {
+  background-color: #3771E2;
+  width: 100%;
+  color:#fff;
+  padding-right: 1rem;
+  height:3rem;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.footer p {
+  margin:auto;
+}
+
 /* OVERALL */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;500;700&display=swap'); */
-
 html {
   background-color: #f7f8fc;
 }
@@ -22,6 +34,7 @@ body {
   overflow-x: hidden;
   --bg-nav: #363740;
   background-color: #3771E2;
+  font-family: 'Exo', sans-serif;
 }
 
 h3 {

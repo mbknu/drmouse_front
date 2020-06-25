@@ -79,7 +79,7 @@ export default class Timeline extends React.Component {
           <HorizontalTimeline
             styles={{
               background: "#f8f8f8",
-              foreground: "#1A79AD",
+              foreground: "#3771E2",
               outline: "#dfdfdf",
             }}
             getLabel={() => ('')}
