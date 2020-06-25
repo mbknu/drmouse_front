@@ -5,6 +5,7 @@ import "../styles/Home.css";
 import UserRegisterForm from './UserRegisterForm'
 import Timeline from "./Timeline/Timeline";
 import Chatbot from "./Chatbot/Chatbot"
+import './HomeText.css'
 
 const HomeText = (props) => {
     const useStyles = makeStyles((theme) => ({
@@ -22,6 +23,11 @@ const HomeText = (props) => {
             "& > *": {
                 margin: theme.spacing(1),
                 width: "25ch",
+                fontSize: 10,
+                [theme.breakpoints.down('md')]: {
+                    width: "10ch",
+                    fontSize: 40,
+                  }
             },
             "& label.Mui-focused": {
                 color: "#3771E2",
@@ -31,6 +37,7 @@ const HomeText = (props) => {
                     borderColor: "#3771E2",
                 },
             },
+           
         },
     }));
     const classes = useStyles();
@@ -42,14 +49,10 @@ const HomeText = (props) => {
                 <h4>Prise de rendez-vous</h4>
                 <div className="home-btn" >
                     <UserRegisterForm />
-                    <Button
-                        className={classes.Button}
-                        variant="contained"
-                        color="primary"
-                        onClick="#"
-                    >
-                        Je suis professionnel de santé
-                    </Button>
+                    <br/>
+                    <button className="RegistrationCTA">
+                        Je suis un professionnel de santé
+                    </button>
                 </div>
             </div>
             <hr />

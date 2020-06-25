@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.footer {
+.footerDesktop, .footerMobile {
   background-color: #3771E2;
   width: 100%;
   color:#fff;
@@ -20,8 +20,12 @@
   justify-content: center;
   align-items:center;
 }
-.footer p {
+.footerDesktop, .footerMobile p {
   margin:auto;
+}
+
+.text-footer {
+  margin-top:2%;
 }
 
 /* OVERALL */
@@ -515,4 +519,22 @@ a .fa-pen:hover {
 
 .Return:hover {
   background-color: #edeef3;
+}
+
+/* css Desktop */
+@media screen and (min-width: 768px) {
+
+  .footerMobile {
+  display : none
+}
+
+}
+
+/* css Mobile */
+@media screen and (max-width: 768px) {
+
+  .footerDesktop {
+  display : none
+}
+
 }

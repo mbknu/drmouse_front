@@ -9,7 +9,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 
-const customStyles = {
+const customStylesDesktop = {
     //overlaybackground
     overlay: {
         position: 'fixed',
@@ -35,6 +35,9 @@ const customStyles = {
         padding: '20px'
     }
 };
+
+
+
 
 const UserRegisterForm = ({ register, isAuthenticated }) => {
     const [showModal, setShowModal] = useState(false);
@@ -118,21 +121,16 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
     const classes = useStyles();
     return (
         <div>
+        <div className="formDesktop">
                 {isAuthenticated === false ? <Redirect to='/login' email1={email} password1={password}/> 
         : <>
-            <Button
-                className={classes.Button}
-                variant="contained"
-                color="primary"
-                onClick={handleOpenModal}
-            >
-                Je suis patient
-                </Button>
+
+            <button className="RegistrationPatientCTA" onClick={handleOpenModal}> Je suis un patient</button>
             <Modal
                 isOpen={showModal}
                 contentLabel="Modal #1 Global Style Override Example"
                 onRequestClose={handleCloseModal}
-                style={customStyles}
+                style={customStylesDesktop}
             >
                 <div className="modalHeader">
                     <div className="closeModal" onClick={handleCloseModal}>
@@ -327,6 +325,8 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
             </Modal>
             </>}
         </div>
+       
+</div>
     )
 }
 

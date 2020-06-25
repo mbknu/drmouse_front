@@ -1,0 +1,63 @@
+.RegistrationCTA {
+    background-color: #3771E2;
+    border-radius:20px;
+    border:none;
+    color:white;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+    font-size: 100%;
+    width: 190px;
+    height:60px;
+}
+
+.RegistrationCTA:hover {
+    background-color: #3771E2;
+    border-radius:20px;
+    border:none;
+    color:white;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.4);
+    width: 190px;
+    height:60px;
+}
+
+.home-btn {
+    width: 450px;
+    margin-left:-20%;
+    
+}
+
+/* css Mobile */
+@media screen and (max-width: 768px) {
+
+    .home-btn {
+        display:flex;
+        flex-direction: column;
+        
+    }
+
+    .RegistrationCTA {
+        background-color: #3771E2;
+        border-radius:20px;
+        border:none;
+        color:white;
+        box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+        font-size: 100%;
+        width: 230px;
+        height:60px;
+        margin-left: 20%;
+    }
+    
+    .RegistrationCTA:hover {
+        background-color: #3771E2;
+        border-radius:20px;
+        border:none;
+        color:white;
+        box-shadow: 0 1px 10px 0 rgba(0,0,0,0.4);
+        width: 230px;
+        height:60px;
+        margin-left: 20%;
+    }
+
+    .home-text-one {
+        width: 300px;
+    }
+}

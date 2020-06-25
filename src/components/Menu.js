@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import '../styles/connexion.css';
+import './Menu.css'
 
 const Menu = (props) => {
     const useStyles = makeStyles((theme) => ({
@@ -36,22 +37,10 @@ const Menu = (props) => {
 
     return (
         <div className="buttons-co">
-           <Button 
-                className={classes.Button}
-                variant="contained" 
-                color="primary"
-                onClick='#'
-            >
-                Connexion professionnel
-            </Button>
             <Link to='/login' >
-                <Button 
-                    className={classes.Button}
-                    variant="contained" 
-                    color="primary"
-                >
-                    Connexion patient
-                </Button>
+                <button className="ConnexionPatient">
+                  Connexion patient
+                </button>
             </Link>
         </div>
     );

@@ -25,3 +25,22 @@
 .button-back, .button-forward {
     display:none
 }
+
+/* css Mobile */
+@media screen and (max-width: 768px) {
+
+    .events-wrapper{
+        width:350px;
+        margin-left:-65px;
+    }
+
+    .timeline-wrapper {
+        margin-left:-130px;
+    }
+
+    .text-center{
+        width:250px;
+        margin-left:190px;
+        margin-right:auto;
+    }
+}

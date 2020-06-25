@@ -7,6 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import note from '../../img/notewhite.svg';
+import './Connexion.css'
 
 const ConnexionContainer = ({email1, password1, login, isAuthenticated}) => {
     const useStyles = makeStyles((theme) => ({
@@ -89,6 +90,7 @@ const ConnexionContainer = ({email1, password1, login, isAuthenticated}) => {
             >
                 Se connecter
             </Button>
+            
         </div>
         <img className='imgnote2' src={note} alt='note-icon' />
         </div>
