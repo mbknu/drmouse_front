@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-.home-container {
-    width: 100%;
-    margin: 2rem 0;
-=======
 .home img {
     height: 60vh;
     margin: auto;
@@ -26,7 +21,6 @@
 
 .home-container {
     width: 100%;
->>>>>>> a24992df6ec2ef6f75cc9b47962fd38e19e5492b
     background-color: #FFFFFF;
 }
 
