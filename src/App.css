@@ -163,13 +163,10 @@ a .fa-pen:hover {
 }
 
 .Admin-name {
-  font-size: 1rem;
-  padding-top: 15px;
+  padding: 0.5rem 0.9rem;
   background-color: #fff;
-  color:#3771E2;
-  border-radius: 15px;
-  width: 200px;
-  text-align: center;
+  color: #3771E2;
+  border-radius: 20px;
 }
 
 .Admin-brand h1 {
@@ -181,6 +178,7 @@ a .fa-pen:hover {
 .Admin-board {
   display: flex;
   justify-content: flex-end;
+  max-width: 100%;
 }
 
 .Admin-board .Disconnect {

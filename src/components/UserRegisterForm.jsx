@@ -126,7 +126,7 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
                 color="primary"
                 onClick={handleOpenModal}
             >
-                Je suis patient
+                Créer mon compte patient
                 </Button>
             <Modal
                 isOpen={showModal}
