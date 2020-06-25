@@ -83,7 +83,7 @@ export default class Timeline extends React.Component {
               outline: "#dfdfdf",
             }}
             getLabel={() => ('')}
-            lawidth={0}
+            labelwidth={0}
             index={this.state.curIdx}
             indexClick={index => {
               const curIdx = this.state.curIdx;
