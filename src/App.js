@@ -2,12 +2,12 @@ import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import HomePage from './components/HomePage'
-import UserDashboard from './components/UserDashboard'
-import Login from './components/Connexion/Login'
-import UserRegisterForm from './components/UserRegisterForm'
-import Header from './components/Header';
-import ConnexionContainer from './components/Connexion/ConnexionContainer';
+import HomePage from './Components/HomePage'
+import UserDashboard from './Components/UserDashboard'
+import Login from './Components/Connexion/Login'
+import UserRegisterForm from './Components/UserRegisterForm'
+import Header from './Components/Header';
+import ConnexionContainer from './Components/Connexion/ConnexionContainer';
 
 function App() {
   return (
