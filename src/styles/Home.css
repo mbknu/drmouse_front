@@ -1,0 +1,45 @@
+.home img {
+    height: 60vh;
+    margin: auto;
+    margin-bottom: -0.5rem;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    color: #1f1e1e;
+}
+
+.home hr {
+    width: 90%;
+    opacity: 0.4;
+}
+
+.home h4 {
+    margin: 0;
+}
+
+.home-container {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.home-text-one {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.home-text-two {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 15%;
+}
+
+.home-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}

@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   outline: none;
   background-color: #3771E2;
+  height: 100vh;
 }
 
 code {
