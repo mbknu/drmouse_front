@@ -13,19 +13,18 @@ const Review = (props)  => {
     const { name, gender, age } = state;
     return (
       <div style={{ width: '100%' }}>
-        <h3>Résumé</h3>
         <table>
           <tbody>
             <tr>
-              <td>Nom</td>
+              <td>Nom : </td>
               <td>{name.value}</td>
             </tr>
             <tr>
-              <td>Sexe</td>
+              <td>Sexe : </td>
               <td>{gender.value}</td>
             </tr>
             <tr>
-              <td>Age</td>
+              <td>Age : </td>
               <td>{age.value}</td>
             </tr>
           </tbody>
