@@ -87,7 +87,7 @@ const Profil = ({patient}) => {
     if(patient.glasses === 1) { glasses= "oui"} else {glasses='non'}
 
     let sex;
-    if(patient.sexe === 1) { sex= "femme"} else {sex='homme'}
+    if(patient.sexe === "1") { sex= "femme"} else {sex='homme'}
 
     return(
         <>
@@ -117,11 +117,11 @@ const Profil = ({patient}) => {
                 <div className='infoprofil'>
                     <div className='containerinfo'>
                         <h5>Nom</h5>
-                        <p>{patient.firstname}</p>
+                        <p>{patient.lastname}</p>
                     </div>
                     <div className='containerinfo'>
                         <h5>Prénom</h5>
-                        <p>{patient.lastname}</p>
+                        <p>{patient.firstname}</p>
                     </div>
                     <div className='containerinfo'>
                         <h5>Email</h5>

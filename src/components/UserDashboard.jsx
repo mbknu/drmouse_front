@@ -79,9 +79,9 @@ const UserDashboard = ({loadUser, email, password, patient, isAuthenticated}) =>
         <header>
           <div className="Header-container">
             <div className="Admin-board col-md-10">
-              <div className="Admin-name">
-                {clientInfo.firstname.toUpperCase()} {clientInfo.lastname.toUpperCase()}
-              </div>
+                <div className="Admin-name">
+                  {clientInfo.firstname.toUpperCase()} {clientInfo.lastname.toUpperCase()}
+                </div>
               <ButtonDeconnexion />
             </div>
           </div>
@@ -114,7 +114,7 @@ const UserDashboard = ({loadUser, email, password, patient, isAuthenticated}) =>
                   <Profil patient={clientInfo}/>
               </div>
             </div>
-            <Table hover>
+            <Table responsive="sm" hover>
               <thead>
                 <tr>
                   <th>#</th>
