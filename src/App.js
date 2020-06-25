@@ -5,6 +5,7 @@ import UserDashboard from './components/UserDashboard'
 import UserRegisterForm from './components/UserRegisterForm'
 import Header from './components/Header';
 import ConnexionContainer from './components/Connexion/ConnexionContainer';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/UserForm' component={UserRegisterForm} />
         <Route path='/dashboard' component={UserDashboard} />
       </Switch>
+      <Footer />
     </div>
   );
 };

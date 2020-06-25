@@ -20,7 +20,7 @@ import '../App.css';
 import { connect } from 'react-redux';
 import { loadUser } from '../actions/generalActions';
 
-const UserDashboard = ({loadUser, email, password, patient}) => {
+const UserDashboard = ({loadUser, email, password, patient, isAuthenticated}) => {
 
     const useStyles = makeStyles((theme) => ({
         Button: {
@@ -63,6 +63,7 @@ const UserDashboard = ({loadUser, email, password, patient}) => {
       clientInfo = patient.authdata.result[0];
     }
 
+    console.log('patient email', email)
   const getUserExam = () => {
     const url = 'http://localhost:3000/api/users/1/exams';
 
@@ -71,12 +72,6 @@ const UserDashboard = ({loadUser, email, password, patient}) => {
       .then((data) => SetUserExam(data.data))
       .catch((error) => console.log(error));
   }
-
-  // useEffect(() => {
-  //   getUserExam();
-  // }, []);
-
-  console.log(userExam);
   
   return (
     <>
@@ -158,7 +153,8 @@ const UserDashboard = ({loadUser, email, password, patient}) => {
 
 const mapStateToProps = state => {
   return {
-      patient: state.auth.user
+      patient: state.auth.user,
+      isAuthenticated: state.auth.isAuthenticated,
   };
 };
 

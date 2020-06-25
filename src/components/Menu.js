@@ -31,8 +31,6 @@ const Menu = (props) => {
           },
         },
     }));
-
-    console.log(props)
     
     const classes = useStyles();
 

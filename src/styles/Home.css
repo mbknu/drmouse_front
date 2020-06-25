@@ -16,12 +16,14 @@
 }
 
 .home h4 {
+    font-size:0.9rem;
     margin: 0;
 }
 
 .home-container {
     width: 100%;
     background-color: #FFFFFF;
+    padding-top: 2rem;
 }
 
 .home-text-one {

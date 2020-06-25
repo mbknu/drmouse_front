@@ -8,7 +8,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import note from '../../img/notewhite.svg';
 
-const ConnexionContainer = ({login, isAuthenticated, history}) => {
+const ConnexionContainer = ({email1, password1, login, isAuthenticated}) => {
     const useStyles = makeStyles((theme) => ({
         Button: {
             color: 'white',
@@ -44,17 +44,26 @@ const ConnexionContainer = ({login, isAuthenticated, history}) => {
     const handleChangeEmail = (e) => setEmail(e.target.value);
     const handleChangePassword = (e) => setPassword(e.target.value);
   
+    if(isAuthenticated && email1) {
+      setEmail(email1)
+      setPassword(password1)
+      const client = { email, password };
+      login(client);
+    } 
+
     const handleOnSubmit = (e) => {
         e.preventDefault();
         const client = { email, password };
         login(client);
     };
 
+    console.log('email register', email1)
+
     return (
       <>
-        {isAuthenticated? <Redirect to='/dashboard' email={email} password={password}/> 
+        {isAuthenticated? <Redirect to='/dashboard' email={email} password={password} /> 
         :
-        <>
+        <div className='login'>
         <img className='imgnote1' src={note} alt='note-icon' />
         <div className='connexion'>
             <h4>Connexion patient</h4>
@@ -82,7 +91,7 @@ const ConnexionContainer = ({login, isAuthenticated, history}) => {
             </Button>
         </div>
         <img className='imgnote2' src={note} alt='note-icon' />
-        </>
+        </div>
         }
       </>
     )

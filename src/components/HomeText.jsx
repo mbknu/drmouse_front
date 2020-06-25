@@ -32,7 +32,6 @@ const HomeText = (props) => {
             },
         },
     }));
-
     const classes = useStyles();
     return (
         <div className="home-container">
