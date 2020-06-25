@@ -3,6 +3,7 @@ import HomeText from "./HomeText";
 import Menu from './Menu';
 import imghome from '../img/home.svg';
 import '../styles/Home.css';
+import Timeline from "./Timeline/Timeline"
 
 const HomePage = () => {
     return (
@@ -10,6 +11,7 @@ const HomePage = () => {
             <Menu />
             <img src={imghome} alt='home image' />
             <HomeText />
+            <Timeline />
         </div>
     );
 };

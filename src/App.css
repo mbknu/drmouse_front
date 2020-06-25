@@ -232,7 +232,7 @@ a .fa-pen:hover {
 .Container-Anatomy .boobs2 {
   width: 136px;
   height: 107px;
-  background-image: url('./Components/Images/seins.png');
+  background-image: url('./components/Images/seins.png');
   background-size: cover;
   position: absolute;
   z-index: 2;
@@ -256,7 +256,7 @@ a .fa-pen:hover {
 .Container-Anatomy .uterus2 {
   width: 90px;
   height: 90px;
-  background-image: url('./Components/Images/uterus.png');
+  background-image: url('./components/Images/uterus.png');
   position: absolute;
   z-index: 2;
   cursor: pointer;
@@ -280,7 +280,7 @@ a .fa-pen:hover {
 .Container-Anatomy .teeth2 {
   width: 70px;
   height: 70px;
-  background-image: url('./Components/Images/teeth.png');
+  background-image: url('./components/Images/teeth.png');
   background-size: cover;
   position: absolute;
   z-index: 2;
@@ -304,7 +304,7 @@ a .fa-pen:hover {
 .Container-Anatomy .eyes2 {
   width: 70px;
   height: 70px;
-  background-image: url('./Components/Images/eyes.png');
+  background-image: url('./components/Images/eyes.png');
   background-size: cover;
   position: absolute;
   z-index: 2;
@@ -316,7 +316,7 @@ a .fa-pen:hover {
 .Container-Anatomy .colon {
   width: 100px;
   height: 100px;
-  background-image: url('./Components/Images/colon.png');
+  background-image: url('./components/Images/colon.png');
   background-size: cover;
   position: absolute;
   z-index: 2;
@@ -328,7 +328,7 @@ a .fa-pen:hover {
 .Container-Anatomy .heart {
   width: 50px;
   height: 50px;
-  background-image: url('./Components/Images/heart.png');
+  background-image: url('./components/Images/heart.png');
   background-size: cover;
   position: absolute;
   z-index: 3;
