@@ -129,7 +129,7 @@ class SimpleForm extends Component {
             {
               id: '10',
               component: (
-                <div>Je vous propose de prendre dès à présent de prendre un rendez-vous avec un gynécologue sur <a href="https://www.doctolib.fr/" target="_blank" style={{color: "#ffffff", textDecoration: "underline"}}>Doctolib.fr</a></div>
+                <div>Je vous propose de prendre dès à présent de prendre un rendez-vous avec un.e gynécologue sur <a href="https://www.doctolib.fr/" target="_blank" style={{color: "#ffffff", textDecoration: "underline"}}>Doctolib.fr</a></div>
             ),
             asMessage: true,
 
