@@ -4,9 +4,6 @@ import LogoTimeline from './lotties/LogoTimeline';
 
 import './timeline.css';
 
-
-const VALUES = ["2018-03-22", "2018-03-23"];
-
 const EXAMPLE = [
   {
     data: "2018-03-10",

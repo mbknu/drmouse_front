@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import doctolibImg from "./Images/doctolib.png";
 import pagesJaunesImg from "./Images/pagesjaune.png";
 import rdvImg from './Images/rdv.jpg';
-import { createMuiTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { green, blue } from '@material-ui/core/colors';
 

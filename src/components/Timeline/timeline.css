@@ -3,14 +3,12 @@
     justify-content: center;
     margin-right: 2%;
     margin-left: 5%;
-    padding-bottom: 125px;
 }
 .timeline-wrapper {
     margin-top: 5px;
 }
 
 .lotties-wrapper {
-    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;

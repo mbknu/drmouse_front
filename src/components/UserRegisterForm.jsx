@@ -57,8 +57,6 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
     const [glasses, setGlasses] = useState(false);
     const [sport, setSport] = useState(true);
 
-    const [redirect, setRedirect] = useState(false);
-
     const handleOpenModal = () => {
         setShowModal(true)
     }
