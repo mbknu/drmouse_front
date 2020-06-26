@@ -158,10 +158,11 @@ a .fa-pen:hover {
 }
 
 .Admin-name {
-  padding: 0.5rem 0.9rem;
+  padding: 1rem 1.9rem;
   background-color: #fff;
   color: #3771E2;
-  border-radius: 20px;
+  border-radius: 15px;
+  align-self: center;
 }
 
 .Admin-brand h1 {

@@ -11,20 +11,18 @@ const HomePage = ({isAuthenticated}) => {
         <div className="home">
             <Menu />
                     
-          <div className="home-banner">
-<<<<<<< HEAD
-                {/* <img className="home-img" src={imghome} alt="home concept" /> */}
-=======
-                {isAuthenticated ? <div className='vide'/>:<img className="home-img" src={imghome} alt='home concept' />}
->>>>>>> b82f6ca202dfae844dbd234705bfe0cb6f23895c
-                <div className="home-text-one">
-                    <h1>
-                        Mieux prévenir pour mieux guérir
-                    </h1>
-                    <h3>Caremind vous aide à planifier vos prochains rendez-vous médicaux en fonction de votre âge, votre sexe et vos antécédents médicaux...</h3>
-                    <UserRegisterForm />
+                {isAuthenticated ? <div className='vide'/>:
+                <div className="home-banner">
+                    <img className="home-img" src={imghome} alt='home concept' />
+                    <div className="home-text-one">
+                        <h1>
+                            Mieux prévenir pour mieux guérir
+                        </h1>
+                        <h3>Caremind vous aide à planifier vos prochains rendez-vous médicaux en fonction de votre âge, votre sexe et vos antécédents médicaux...</h3>
+                        <UserRegisterForm />
+                    </div>
                 </div>
-            </div>
+                }
             <HomeText />
         </div>
     );

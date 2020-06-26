@@ -47,9 +47,10 @@
 
 .home-info {
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 2rem;
+    justify-content: center;
 }
 
 .home h1, .home h3 {
@@ -80,13 +81,14 @@
 .check {
     display: flex;
     align-items: center;
+    margin: 10px 20px;
 }
 .check h3 {
     margin: 0;
 }
 .home-benefits {
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: auto;
     justify-content: space-around;
     flex-wrap: wrap;
