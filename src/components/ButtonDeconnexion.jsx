@@ -10,7 +10,6 @@ const ButtonDeconnexion = ({ logout }) => {
     const useStyles = makeStyles((theme) => ({
         Button: {
             fontFamily: "Exo",
-            color: "white",
             backgroundColor: "#fff",
             color: "#3771E2",
             marginLeft: "1rem",
