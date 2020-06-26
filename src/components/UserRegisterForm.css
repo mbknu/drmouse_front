@@ -26,6 +26,21 @@ margin-top: -2%;
 font-weight: bolder;
 }
 
+.content-gif {
+    display: flex;
+}
+.content-gif .img1 {
+    margin-right: 0.5rem;
+    width:6rem;
+    height: 5rem;
+    object-fit: cover;
+}
+.content-gif .img2 {
+    margin-right: 1rem;
+    width:5rem;
+    height: 4rem;
+    object-fit: cover;
+}
 .closeModal:hover {
     margin-left: 95%;
     margin-top: -2%;
@@ -43,7 +58,6 @@ font-weight: bolder;
 label {
     color: #3771E2;
     font-size:12px;
-    margin-left:2%;
 }
 
 .radioInput {
@@ -69,8 +83,8 @@ input{
 input#Age, input#Height, input#Weight, input#Firstname, input#Lastname, input#Email, input#Phone, input#Password {
     width:80%;
     border-radius: 20px;
-    border-style: solid;
-    border-color: rgba(255, 166, 0, 0);
+    /* border-style: solid; */
+    /* border-color: #3771E2; */
     border-width: 1.2px;
     height: 30px;
     padding-left:5%;
@@ -81,8 +95,8 @@ input#Age, input#Height, input#Weight, input#Firstname, input#Lastname, input#Em
 input#age:Hover, input#Height:hover, input#Weight:hover, input#Firstname:hover, input#Lastname:hover, input#Email:hover, input#Phone:hover, input#Password:hover {
     width:80%;
     border-radius: 20px;
-    border-style: solid;
-    border-color: rgba(255, 166, 0, 0);
+    /* border-style: solid;
+    border-color: #143d8f; */
     border-width: 1.2px;
     height: 30px;
     padding-left:5%;
@@ -92,7 +106,7 @@ input#age:Hover, input#Height:hover, input#Weight:hover, input#Firstname:hover, 
 .submitCTA {
     width:45%;
     border-radius: 20px;
-    background-color: #3770e2de;
+    background-color: #3771E2;
     color:white;
     height:45px;
     border:none;
@@ -103,7 +117,7 @@ input#age:Hover, input#Height:hover, input#Weight:hover, input#Firstname:hover, 
 .submitCTA:hover {
     width:45%;
     border-radius: 20px;
-    background-color: #3771E2;
+    background-color: #143d8f;
     color:white;
     height:45px;
     border:none;

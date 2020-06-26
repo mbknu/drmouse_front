@@ -4,9 +4,6 @@ import LogoTimeline from './lotties/LogoTimeline';
 
 import './timeline.css';
 
-
-const VALUES = ["2018-03-22", "2018-03-23"];
-
 const EXAMPLE = [
   {
     data: "2018-03-10",
@@ -58,7 +55,7 @@ export default class Timeline extends React.Component {
         <div>
             <div className="lotties-wrapper">
                 <div className="logo-text">
-                <h5>Le saviez vous ?</h5>
+                <h5>Le saviez-vous ?</h5>
                 <LogoTimeline />
                 
                 </div>
@@ -68,12 +65,12 @@ export default class Timeline extends React.Component {
         {/* Bounding box for the Timeline */}
         <div
           style={{
-            width: "60%",
+            width: "90%",
             height: "100px",
             margin: "0 auto",
             marginTop: "20px",
             fontSize: "15px",
-            color: "white"
+            color: "white",
           }}
         >
           <HorizontalTimeline
@@ -82,6 +79,8 @@ export default class Timeline extends React.Component {
               foreground: "#3771E2",
               outline: "#dfdfdf",
             }}
+            getLabel={() => ('')}
+            labelwidth={0}
             index={this.state.curIdx}
             indexClick={index => {
               const curIdx = this.state.curIdx;

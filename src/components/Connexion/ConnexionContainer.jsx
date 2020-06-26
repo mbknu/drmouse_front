@@ -12,6 +12,7 @@ import './Connexion.css'
 const ConnexionContainer = ({email1, password1, login, isAuthenticated}) => {
     const useStyles = makeStyles((theme) => ({
         Button: {
+            fontFamily: 'Exo',
             color: 'white',
             backgroundColor: '#3771E2',
             '&:hover': {

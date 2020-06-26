@@ -1,47 +1,111 @@
 .home-img {
-    height: 60vh;
-    margin: auto;
-    margin-bottom: -0.5rem;
+    height: 45vw;
+    margin-right:5vw;
 }
 
 .home {
     display: flex;
     flex-direction: column;
     color: #1f1e1e;
+    margin:auto;
+}
+
+.home-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: auto;
+    padding-top: 2rem;
+    height: 90vh;
 }
 
 .home hr {
     width: 90%;
     opacity: 0.4;
+    background-color: #3771E2;
 }
 
 .home h4 {
     font-size:0.9rem;
     margin: 0;
 }
+.home h3 {
+    font-size:1.2rem;
+    margin: 0;
+}
 
 .home-container {
+    display: flex;
     width: 100%;
     background-color: #FFFFFF;
     padding-top: 2rem;
+    margin: auto;
+    padding-bottom: 5rem;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.home-info {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.home h1, .home h3 {
+    margin-bottom: 1rem;
 }
 
 .home-text-one {
-    width: 30vw;
+    width: 35vw;
+    align-self: center;
     display: flex;
     flex-direction: column;
+    color: #FFFFFF;
+    justify-content: center;
+    text-align: left;
+}
+
+.part-one {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.home-mission {
     margin: auto;
+    margin-bottom: 1rem;
 }
-
-.home-text-two {
+.check {
     display: flex;
-    flex-direction: column;
-    margin: 1rem 15%;
+    align-items: center;
+    margin: 10px 20px;
 }
-
-.home-btn {
+.check h3 {
+    margin: 0;
+}
+.home-benefits {
+    display: flex;
     width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.home-benefits img {
+    width: 3rem;
+}
+.part-two {
     display: flex;
-    justify-content: space-between;
-    margin: 2rem 0;
+    width: 70%;
+    justify-content: center;
+    padding-left: 2rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.vide {
+    height: 2rem;
 }

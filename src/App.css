@@ -40,11 +40,6 @@ body {
   background-color: #3771E2;
   font-family: 'Exo', sans-serif;
 }
-
-h3 {
-  font-size: 1rem !important;
-}
-
 /* LOGIN */
 
 .LoginBkg {
@@ -167,13 +162,11 @@ a .fa-pen:hover {
 }
 
 .Admin-name {
-  font-size: 1rem;
-  padding-top: 15px;
+  padding: 1rem 1.9rem;
   background-color: #fff;
-  color:#3771E2;
+  color: #3771E2;
   border-radius: 15px;
-  width: 200px;
-  text-align: center;
+  align-self: center;
 }
 
 .Admin-brand h1 {
@@ -185,6 +178,7 @@ a .fa-pen:hover {
 .Admin-board {
   display: flex;
   justify-content: flex-end;
+  max-width: 100%;
 }
 
 .Admin-board .Disconnect {
@@ -521,6 +515,7 @@ a .fa-pen:hover {
   background-color: #edeef3;
 }
 
+
 /* css Desktop */
 @media screen and (min-width: 768px) {
 
@@ -536,5 +531,64 @@ a .fa-pen:hover {
   .footerDesktop {
   display : none
 }
+
+
+@media screen and (max-width: 376px) {
+  .app {
+    min-height: 250vh;
+    min-width: 146vw;
+  }
+
+  .Admin-board {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin-left: 50%;
+  }
+
+  .ContainerBody {
+    background-color: #fff;
+    border: 1px solid #dfe0eb;
+    border-radius: 20px;
+    padding:1rem;
+    margin-right: 4%;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .Container-Table{
+    background-color: #fff;
+    border: 2px solid #dfe0eb;
+    border-radius: 10px;
+    padding: 30px 30px !important;
+    margin: 50px 5px 10px 5px;
+    width: 100%;
+  }
+
+  .Container-Anatomy .uterus {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3771E2;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    top: 49%;
+    left: 46%;
+  }
+
+  .table {
+    width: 10%;
+  }
+
+  /* .table td {
+    font-size: 15px;
+    padding: 0.5rem ;
+  } */
 
 }

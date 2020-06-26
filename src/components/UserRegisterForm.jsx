@@ -1,4 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import sportgif from '../img/sport.gif';
+import eye from '../img/eye.gif';
+import smile from '../img/smile.gif';
+import sad from '../img/sad.gif';
+import cardiacgif from '../img/cardiac.gif';
 import { Redirect } from 'react-router-dom';
 import Modal from 'react-modal';
 import './UserRegisterForm.css'
@@ -55,8 +60,6 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
     const [glasses, setGlasses] = useState(false);
     const [sport, setSport] = useState(true);
 
-    const [redirect, setRedirect] = useState(false);
-
     const handleOpenModal = () => {
         setShowModal(true)
     }
@@ -89,13 +92,14 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
     const handleChangesmoker = (e) => setSmoker(true);
     const handleChangesmokerFalse = (e) => setSmoker(false);
 
-
     const useStyles = makeStyles((theme) => ({
         Button: {
-            color: "white",
-            backgroundColor: "#3771E2",
+            fontFamily: 'Exo',
+            color: "#3771E2",
+            backgroundColor: "#FFFFFF",
             "&:hover": {
-                background: "#3771E2",
+                background: "#143d8",
+                color: "#FFFFFF",
             },
             borderRadius: "20px",
         },
@@ -124,8 +128,14 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
         <div className="formDesktop">
                 {isAuthenticated === false ? <Redirect to='/login' email1={email} password1={password}/> 
         : <>
-
-            <button className="RegistrationPatientCTA" onClick={handleOpenModal}> Je suis un patient</button>
+            <Button
+                className={classes.Button}
+                variant="contained"
+                color="primary"
+                onClick={handleOpenModal}
+            >
+                Je crée mon compte
+                </Button>
             <Modal
                 isOpen={showModal}
                 contentLabel="Modal #1 Global Style Override Example"
@@ -203,18 +213,23 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
                             />
                         </div>
                         <br />
-                        <div>
-                            <label for="sport">Pratique de sport</label><br />
-                            <div className="radioInput">
-                                <div className="radioValuesLeft">
-                                    <input type="radio" id="Sport" name="sport" value='true' onChange={handleChangeSport} /> Oui
-                                    </div>
-                                <div className="radioValuesRight">
-                                    <input type="radio" id="Sport2" name="sport" value='false' onChange={handleChangeSportFalse} /> Non
-                                    </div>
+                        <div className='content-gif'>
+                            <img className='img1' src={sportgif} alt='sport' />
+                            <div>
+                                <label for="sport">Pratique de sport</label><br />
+                                <div className="radioInput">
+                                    <div className="radioValuesLeft">
+                                        <input type="radio" id="Sport" name="sport" value='true' onChange={handleChangeSport} /> Oui
+                                        </div>
+                                    <div className="radioValuesRight">
+                                        <input type="radio" id="Sport2" name="sport" value='false' onChange={handleChangeSportFalse} /> Non
+                                        </div>
+                                </div>
                             </div>
                         </div>
                         <br />
+                        <div className='content-gif'>
+                        <img className='img2' src={smoker? sad : smile} alt='smoke' />
                         <div>
                             <label for="smoker">Tabagisme</label><br />
                             <div className="radioInput">
@@ -225,9 +240,12 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
                                     <input type="radio" id="Smoker2" name="smoker" value='false' onChange={handleChangesmokerFalse} /> Non
                                     </div>
                             </div>
+                            </div>
                         </div>
                         <br />
-                        <div>
+                        <div className='content-gif'>
+                            <img className='img2' src={cardiacgif} alt='cardiac' />
+                            <div>
                             <label for="cardiac_disease">Troubles cardiaques</label><br />
                             <div className="radioInput">
                                 <div className="radioValuesLeft">
@@ -237,8 +255,11 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
                                     <input type="radio" name="cardiac_disease" id="Cardiac_disease2" value='false' onChange={handleChangeCardiacFalse} /> Non
                                     </div>
                             </div>
+                            </div>
                         </div>
                         <br />
+                        <div className='content-gif'>
+                        <img className='img2' src={eye} alt='lunette' />
                         <div>
                             <label for="glasses">Lunettes ou lentilles</label><br />
                             <div className="radioInput">
@@ -247,6 +268,7 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
                                     </div>
                                 <div className="radioValuesRight">
                                     <input type="radio" name="glasses" id="Glasses2" value='false' onChange={handleChangeGlassesFalse} /> Non
+                                    </div>
                                     </div>
                             </div>
                         </div>

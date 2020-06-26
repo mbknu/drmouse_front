@@ -5,7 +5,7 @@ import Review from './Review';
 
 const theme = {
     background: '#f5f8fb',
-    fontFamily: 'Roboto',
+    fontFamily: 'Exo',
     headerBgColor: '#143d8f',
     headerFontColor: '#fff',
     headerFontSize: '15px',
@@ -117,7 +117,7 @@ class SimpleForm extends Component {
             },
             {
               id: '8',
-              message: 'Savez-vous qu\'à partir de 50 ans, il est conseillé de faire une mammographie tous les deux ans ?',
+              message: 'Savez-vous qu\'à partir de 50 ans chez les femmes, il est conseillé de faire une mammographie tous les deux ans ?',
               trigger: '9' 
             },
             { id: '9',
@@ -129,7 +129,7 @@ class SimpleForm extends Component {
             {
               id: '10',
               component: (
-                <div>Je vous propose de prendre un rendez-vous dès à présent sur <a href="https://www.doctolib.fr/" target="_blank" style={{color: "#ffffff", textDecoration: "underline"}}>Doctolib.fr</a></div>
+                <div>Je vous propose de prendre dès à présent de prendre un rendez-vous avec un gynécologue sur <a href="https://www.doctolib.fr/" target="_blank" style={{color: "#ffffff", textDecoration: "underline"}}>Doctolib.fr</a></div>
             ),
             asMessage: true,
 
@@ -139,7 +139,7 @@ class SimpleForm extends Component {
               message: 'Merci d\'avoir discuté avec moi, bonne journée',
               end: true,
             },
-          ]}
+          ]} headerTitle="Chat"
         />
         </ThemeProvider>
       );

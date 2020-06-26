@@ -1,8 +1,5 @@
 import * as actionTypes from './actionTypes';
-import { push } from 'react-router-redux'
 import axios from 'axios';
-
-
 
 /* authentification USER*/
 // Check token & load client

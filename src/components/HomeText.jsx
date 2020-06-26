@@ -1,70 +1,49 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
+import { connect } from 'react-redux';
 import "../styles/Home.css";
-import UserRegisterForm from './UserRegisterForm'
 import Timeline from "./Timeline/Timeline";
-import Chatbot from "./Chatbot/Chatbot"
-import './HomeText.css'
 
-const HomeText = (props) => {
-    const useStyles = makeStyles((theme) => ({
-        Button: {
-            color: "white",
-            backgroundColor: "#3771E2",
-            "&:hover": {
-                background: "#3771E2",
-            },
-            borderRadius: "20px",
-        },
-        root: {
-            display: "flex",
-            flexDirection: "column",
-            "& > *": {
-                margin: theme.spacing(1),
-                width: "25ch",
-                fontSize: 10,
-                [theme.breakpoints.down('md')]: {
-                    width: "10ch",
-                    fontSize: 40,
-                  }
-            },
-            "& label.Mui-focused": {
-                color: "#3771E2",
-            },
-            "& .MuiOutlinedInput-root": {
-                "&.Mui-focused fieldset": {
-                    borderColor: "#3771E2",
-                },
-            },
-           
-        },
-    }));
-    const classes = useStyles();
+import Chatbot from "./Chatbot/Chatbot";
+import check from '../img/check.gif';
+
+const HomeText = ({isAuthenticated}) => {
     return (
         <div className="home-container">
-            <div className="home-text-one">
-                <h2>Mieux prévenir pour mieux soigner</h2>
-                <h4>Rappel d'examens médicaux</h4>
-                <h4>Prise de rendez-vous</h4>
-                <div className="home-btn" >
-                    <UserRegisterForm />
-                    <br/>
-                    <button className="RegistrationCTA">
-                        Je suis un professionnel de santé
-                    </button>
+        {isAuthenticated ? ''
+            :
+            <>
+                <div className="home-info">
+                    <div className="part-one">
+                        <div className="home-mission" >
+                            <h2>Notre mission : la prévention</h2>
+                        </div>
+                        <div className="home-benefits" >
+                            <div className='check'><img src={check} alt='check' />
+                            <h3>Prévisualisation des rendez-vous clés</h3></div>
+                            <div className='check'><img src={check} alt='check' />
+                            <h3>Rappel d'examens médicaux</h3></div>
+                            <div className='check'><img src={check} alt='check' />
+                            <h3>Aide à la prise de rendez-vous</h3></div>
+                            <div className='check'><img src={check} alt='check' />
+                            <h3>Informations prévention</h3></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <hr />
-            <div className="home-text-two">
-                <h2>Prévisualisez vos rendez-vous clés pour une bonne santé</h2>
-                <h4>Être alerté lors d'un examen à prendre</h4>
-                <h4>Comprendre les enjeux de celui-ci</h4>
-            </div>
-            <Timeline />
+                <hr />
+            </>}
+        <div className="part-two">
+                    <Timeline />
+           
+        </div>
             <Chatbot />
         </div>
     );
 };
 
-export default HomeText;
+const mapStateToProps = state => {
+    return {
+        isAuthenticated: state.auth.isAuthenticated
+    };
+};
+  
+export default connect(mapStateToProps)(HomeText);

@@ -1,0 +1,66 @@
+.titledash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.titledash h2 {
+    margin:0;
+    font-size: 1.5rem;
+}
+.modalprofil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    width:50%;
+    left: 20% !important;
+    right: 20% !important;
+}
+
+.containerinfo {
+    background-color: #3771E2;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    width: 40%;
+    margin:0.5rem
+}
+.modalprofil h4 {
+    margin-top: 2rem;
+}
+.containerinfo p, .containerinfo h5 {
+    margin:0
+}
+.profiltitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 10rem; */
+}
+.infoprofil {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.modalprofil hr {
+    height: 0.2rem;
+    margin:0.5rem;
+    opacity: 0.5;
+    border: 0.05rem solid #3771E2;
+}
+
+.nameinfo {
+    width: 50%;
+}
+
+.profilinfo {
+    width: 50%;
+}
+
+.nameinfo p, .profilinfo p {
+    padding:0;
+    margin:0.6rem;
+    margin-left: 1rem;
+}

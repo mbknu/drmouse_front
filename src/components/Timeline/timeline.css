@@ -1,9 +1,8 @@
 .text-center {
     display: flex;
     justify-content: center;
-    margin-right: 25%;
-    margin-left: 25%;
-    padding-bottom: 125px;
+    margin-right: 2%;
+    margin-left: 5%;
 }
 .timeline-wrapper {
     margin-top: 5px;
@@ -16,6 +15,8 @@
 }
 .logo-text h5 {
     margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .timeline-wrapper li {

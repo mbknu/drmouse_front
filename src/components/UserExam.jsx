@@ -1,9 +1,25 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button'
 import doctolibImg from "./Images/doctolib.png";
 import pagesJaunesImg from "./Images/pagesjaune.png";
 import rdvImg from './Images/rdv.jpg';
+import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import { green, blue } from '@material-ui/core/colors';
+
+const useStyles = makeStyles((theme) => ({
+  margin: {
+    marginLeft: '20px',
+    color: '#fff',
+  },
+}));
+
+const theme = createMuiTheme({
+  palette: {
+    primary: green,
+    secondary: blue,
+  },
+});
 
 const UserExam = ({
   index,
@@ -12,6 +28,7 @@ const UserExam = ({
   description,
   female,
 }) => {
+  const classes = useStyles();
 
   const [show, setShow] = useState(false);
 
@@ -24,9 +41,9 @@ const UserExam = ({
         <td>
         { female === 1 
             ? 
-            <div className="badge badge-pill badge-info">On Hold</div> 
+            <div className="badge badge-pill badge-info">En Attente</div> 
             :
-            <div className="badge badge-pill badge-success">Completed</div>
+            <div className="badge badge-pill badge-success">Complété</div>
         }
           {/* <div className="badge badge-pill badge-info">On Hold</div> */}
         </td>
@@ -35,14 +52,22 @@ const UserExam = ({
         {
           female === 1 
           ?
-          <button className="btn-shadow btn btn-secondary btn-focus" onClick={() => setShow(true)}>Create</button>
+          <ThemeProvider theme={theme}>
+            <Button variant="contained" color="secondary" onClick={() => setShow(true)} className={classes.margin}>
+              Créer
+            </Button>
+          </ThemeProvider>
           :
-          <button className="btn-shadow btn btn-secondary btn-success">Done</button>
+          <ThemeProvider theme={theme}>
+            <Button variant="contained" color="primary" className={classes.margin}>
+              Done!
+            </Button>
+          </ThemeProvider>
         }
         </td>
       </tr>
       <Modal show={show} onHide={() => setShow(false)} centered>
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title>Prendre un rendez-vous</Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -53,11 +78,11 @@ const UserExam = ({
             <img src={pagesJaunesImg} alt="pages jaunes" className="pagesJauneImg"/>
           </a>
           <a href="https://www.rdvmedicaux.com/" target="_blank"  rel="noopener noreferrer">
-            <img src={rdvImg} alt="pages jaunes" className="rdvImg"/>
+            <img src={rdvImg} alt="rdv" className="rdvImg"/>
           </a>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShow(false)}>
+          <Button variant="secondary" className="fas" onClick={() => setShow(false)}>
             Close
           </Button>
         </Modal.Footer>
