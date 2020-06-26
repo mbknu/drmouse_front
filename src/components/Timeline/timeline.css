@@ -32,16 +32,20 @@
 
     .events-wrapper{
         width:350px;
-        margin-left:-65px;
+        margin-left:-180px;
     }
 
     .timeline-wrapper {
-        margin-left:-130px;
+        margin-left:-300px;
     }
 
     .text-center{
         width:250px;
-        margin-left:190px;
+        margin-left:120px;
         margin-right:auto;
+    }
+
+    .lotties-wrapper{
+        margin-left:-197px;
     }
 }

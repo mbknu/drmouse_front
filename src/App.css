@@ -532,10 +532,29 @@ a .fa-pen:hover {
   display : none
 }
 
+.footerMobileContainer{
+  position:absolute;
+  width:376px;
+
+}
+
+.containerGobalFooter{
+  height: 55px;
+}
+
+.logo {
+  width: 8rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  position: relative;
+
+}
+}
+
 
 @media screen and (max-width: 376px) {
   .app {
-    min-height: 250vh;
+   
     min-width: 146vw;
   }
 
@@ -590,4 +609,4 @@ a .fa-pen:hover {
     font-size: 15px;
     padding: 0.5rem ;
   } */
-}}
+}

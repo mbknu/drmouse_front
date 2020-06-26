@@ -101,4 +101,14 @@
         margin-left:250px;
     }
 
+
+    .buttons-co {
+        justify-content: flex-end;
+        margin-left:50px;
+    }
+
+    .coPatientCTAHome {
+        margin-left:100px;
+    }
+
 }

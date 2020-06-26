@@ -15,10 +15,10 @@ const HomePage = ({isAuthenticated}) => {
                 <div className="home-banner">
                     <img className="home-img" src={imghome} alt='home concept' />
                     <div className="home-text-one">
-                        <h1>
+                        <h1 className="titleHomePage">
                             Mieux prévenir pour mieux guérir
                         </h1>
-                        <h3>Caremind vous aide à planifier vos prochains rendez-vous médicaux en fonction de votre âge, votre sexe et vos antécédents médicaux...</h3>
+                        <h3 className="introHomePage">Caremind vous aide à planifier vos prochains rendez-vous médicaux en fonction de votre âge, votre sexe et vos antécédents médicaux...</h3>
                         <UserRegisterForm />
                     </div>
                 </div>

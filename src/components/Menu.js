@@ -56,7 +56,7 @@ const Menu = ({isAuthenticated}) => {
             </>
             :
             <Link to='/login' >
-                <Button 
+                <Button className="coPatientCTAHome"
                     className={classes.Button}
                     variant="contained" 
                     color="primary"
