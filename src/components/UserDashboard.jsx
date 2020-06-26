@@ -3,7 +3,6 @@ import axios from 'axios';
 import ButtonDeconnexion from './ButtonDeconnexion';
 import Table from 'react-bootstrap/Table';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
-import ButtonAction from './Button/ButtonAction';
 import femaleBody from './Images/female-body.png';
 import PopoverBoob from './Popovers/PopoverBoob';
 import PopoverUterus from './Popovers/PopoverUterus';
@@ -12,7 +11,6 @@ import PopoverEyes from './Popovers/PopoverEyes';
 import PopoverColon from './Popovers/PopoverColon';
 import PopoverHeart from './Popovers/PopoverHeart';
 import UserExam from './UserExam';
-import { makeStyles } from '@material-ui/core/styles';
 import '../App.css';
 
 import { connect } from 'react-redux';
@@ -21,35 +19,6 @@ import Profil from './Profil';
 
 const UserDashboard = ({loadUser, email, password, patient, isAuthenticated}) => {
 
-    const useStyles = makeStyles((theme) => ({
-        Button: {
-            color: 'white',
-            backgroundColor: '#fff',
-            color:'#3771E2',
-            marginLeft:'1rem',
-            '&:hover': {
-              background: '#fff',
-            },
-            borderRadius: '15px',
-          },
-        root: {
-            display:'flex',
-            flexDirection:'column',
-          '& > *': {
-            margin: theme.spacing(1),
-            width: '25ch',
-          },
-          '& label.Mui-focused': {
-            color: '#fff',
-          },
-          '& .MuiOutlinedInput-root': {
-            '&.Mui-focused fieldset': {
-              borderColor: '#fff',
-            },
-          },
-        },
-      }));
-      const classes = useStyles();
       const [userExam, SetUserExam] = useState([]);
 
     useEffect(() => {

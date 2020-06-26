@@ -10,19 +10,18 @@ const HomePage = ({isAuthenticated}) => {
     return (
         <div className="home">
             <Menu />
-                    {isAuthenticated ? <div className='vide'/>:<img className="home-img" src={imghome} alt='home concept' />}
-            <HomeText />
+                    
           <div className="home-banner">
-                <img className="home-img" src={imghome} alt="home concept" />
+                {isAuthenticated ? <div className='vide'/>:<img className="home-img" src={imghome} alt='home concept' />}
                 <div className="home-text-one">
                     <h1>
-                        Caremind vous aide à planifier vos prochains rendez-vous
-                        médicaux en fonction de votre âge, votre sexe et vos
-                        antécédents médicaux...
+                        Mieux prévenir pour mieux guérir
                     </h1>
-                        <UserRegisterForm />
+                    <h3>Caremind vous aide à planifier vos prochains rendez-vous médicaux en fonction de votre âge, votre sexe et vos antécédents médicaux...</h3>
+                    <UserRegisterForm />
                 </div>
             </div>
+            <HomeText />
         </div>
     );
 };

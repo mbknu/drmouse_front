@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import Modal from 'react-modal';
 import './UserRegisterForm.css'
@@ -51,8 +51,6 @@ const UserRegisterForm = ({ register, isAuthenticated }) => {
     const [cardiac_disease, setCardiac] = useState(false);
     const [glasses, setGlasses] = useState(false);
     const [sport, setSport] = useState(true);
-
-    const [redirect, setRedirect] = useState(false);
 
     const handleOpenModal = () => {
         setShowModal(true)
