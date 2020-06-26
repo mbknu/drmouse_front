@@ -366,7 +366,9 @@ a .fa-pen:hover {
   font-weight: bold;
   margin: 30px 0px;
 }
-
+.wrapper-footer {
+  height: 65px;
+}
 .Panel {
   display: flex;
 }
