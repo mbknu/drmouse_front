@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from 'react-redux';
 import "../styles/Home.css";
 import Timeline from "./Timeline/Timeline";
+
 import Chatbot from "./Chatbot/Chatbot";
 import check from '../img/check.gif';
 

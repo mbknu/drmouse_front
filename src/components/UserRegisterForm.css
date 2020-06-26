@@ -1,3 +1,25 @@
+.RegistrationPatientCTA{
+    background-color: #3771E2;
+    border-radius:20px;
+    border:none;
+    color:white;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.4);
+    font-size: 100%;
+    width: 190px;
+    height:60px;
+}
+
+.RegistrationPatientCTA:hover{
+    background-color: #3771E2;
+    border-radius:20px;
+    border:none;
+    color:white;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+    font-size: 100%;
+    width: 190px;
+    height:60px;
+}
+
 .closeModal {
 margin-left: 95%;
 margin-top: -2%;
@@ -107,4 +129,51 @@ input#age:Hover, input#Height:hover, input#Weight:hover, input#Firstname:hover, 
 .formContainer{
     margin-left:7%;
 
+}
+
+.formMobile{
+    display:none;
+}
+
+/* css Mobile */
+@media screen and (max-width: 768px) {
+    .RegistrationPatientCTA{
+        background-color: #3771E2;
+        border-radius:20px;
+        border:none;
+        color:white;
+        box-shadow: 0 1px 10px 0 rgba(0,0,0,0.4);
+        font-size: 100%;
+        width: 230px;
+        height:60px;
+        margin-left: 20%;
+    }
+    
+    .RegistrationPatientCTA:hover{
+        background-color: #3771E2;
+        border-radius:20px;
+        border:none;
+        color:white;
+        box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+        font-size: 100%;
+        width: 230px;
+        height:60px;
+        margin-left: 20%;
+    }
+
+    .ReactModal__ContentReact, .Modal__Content--after-open{
+            width: 346px;
+            margin-left:-28%;
+    }
+
+    .formDesktop{
+        display:none;
+    }
+  
+.closeMobile {
+    margin-top:20px;
+}
+  
+
+    
 }

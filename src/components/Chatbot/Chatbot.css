@@ -17,3 +17,28 @@
   .btn:hover {
     color: #c8e6fe;
   }
+  @media screen and (max-width: 768px) {
+
+    .bot{
+    bottom: 115px;
+    left: 230px;
+    width: 147px;
+  }
+    .rsc {
+      width: 373px;
+      margin-left: -229px;
+    }
+    .home-img {
+      width: 46vh;
+      margin:auto;
+      margin-bottom:-3.5rem
+      
+    }
+    .btn {
+      width:50%;
+      height: 50%;
+      border-radius:50%;
+      
+    }
+  
+  }

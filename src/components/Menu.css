@@ -1,0 +1,104 @@
+.ConnexionPro{
+    background-color: white;
+    border-radius:20px;
+    border:none;
+    color:#3771E2;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+    font-size: 100%;
+    width: 190px;
+    height:60px;
+
+}
+
+.ConnexionPatient {
+    background-color: white;
+    border-radius:20px;
+    border:none;
+    color:#3771E2;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+    font-size: 100%;
+    width: 190px;
+    height:60px;
+    margin-left:200px;
+    margin-top:-5%;
+}
+
+.ConnexionPro:hover{
+    background-color: white;
+    border-radius:20px;
+    border:none;
+    color:#3771E2;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.4);
+    font-size: 100%;
+    width: 190px;
+    height:60px;
+
+}
+
+.ConnexionPatient:hover {
+    background-color: white;
+    border-radius:20px;
+    border:none;
+    color:#3771E2;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.4);
+    font-size: 100%;
+    width: 190px;
+    height:60px;
+}
+
+.buttons-co{
+    width: 400px;
+}
+
+/* css Mobile */
+@media screen and (max-width: 768px) {
+   .ConnexionPro{
+        background-color: white;
+        border-radius:20px;
+        border:none;
+        color:#3771E2;
+        box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+        font-size: 100%;
+        width: 150px;
+        height:60px;
+    
+    }
+    
+    .ConnexionPatient {
+        background-color: white;
+        border-radius:20px;
+        border:none;
+        color:#3771E2;
+        box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+        font-size: 100%;
+        width: 150px;
+        height:60px;
+        margin-left:250px;
+        margin-top:-5%;
+    }
+
+    .ConnexionPro:hover{
+        background-color: white;
+        border-radius:20px;
+        border:none;
+        color:#3771E2;
+        box-shadow: 0 1px 10px 0 rgba(0,0,0,0.4);
+        font-size: 100%;
+        width: 150px;
+        height:60px;
+    
+    }
+    
+    .ConnexionPatient:hover {
+        background-color: white;
+        border-radius:20px;
+        border:none;
+        color:#3771E2;
+        box-shadow: 0 1px 10px 0 rgba(0,0,0,0.4);
+        font-size: 100%;
+        width: 150px;
+        height:60px;
+        margin-left:250px;
+    }
+
+}
