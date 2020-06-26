@@ -25,10 +25,12 @@ const HomeText = ({isAuthenticated}) => {
                         <h3>Informations prévention</h3>
                     </div>
                 </div>
-                   </>}
+            </div>
+            </>}
         <div className="part-two">
                     <Timeline />
-            </div>
+           
+        </div>
             <Chatbot />
         </div>
     );
@@ -38,6 +40,6 @@ const mapStateToProps = state => {
     return {
         isAuthenticated: state.auth.isAuthenticated
     };
-  };
+};
   
 export default connect(mapStateToProps)(HomeText);

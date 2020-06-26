@@ -13,7 +13,7 @@ const HomePage = ({isAuthenticated}) => {
                     {isAuthenticated ? <div className='vide'/>:<img className="home-img" src={imghome} alt='home concept' />}
             <HomeText />
           <div className="home-banner">
-                <img className="home-img" src={imghome} alt="home concept" />
+                {/* <img className="home-img" src={imghome} alt="home concept" /> */}
                 <div className="home-text-one">
                     <h1>
                         Caremind vous aide à planifier vos prochains rendez-vous
