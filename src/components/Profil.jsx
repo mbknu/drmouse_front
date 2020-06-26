@@ -87,7 +87,8 @@ const Profil = ({patient}) => {
     if(patient.glasses === 1) { glasses= "oui"} else {glasses='non'}
 
     let sex;
-    if(patient.sexe === "1") { sex= "femme"} else {sex='homme'}
+
+    if(patient.sexe === 1) { sex="femme"} else {sex='homme'}
 
     return(
         <>
