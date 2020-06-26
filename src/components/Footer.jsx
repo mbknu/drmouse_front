@@ -3,7 +3,7 @@ import "../App.css";
 
 const Footer = () => {
     return (
-        <div>
+        <div className="wrapper-footer">
     <div className="footerDesktopContainer">
             <footer className="footerDesktop">
                 <br/>
