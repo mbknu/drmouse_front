@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Project for the Hackathon 2020 with Doctolib and Wild Code School in 48h.
+Team : Mathilde (mathildetho), Chloe (chloe-tt), Christelle (Chris-css), David (davidfaure), Michaël (mbknu)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
